@@ -47,7 +47,7 @@ tr:nth-child(even) td{background:var(--card)}
 </header>
 <nav>
   <a href="#modele">Modèle 3D</a><a href="#implantation">Implantation</a><a href="#campus">Campus 5 MW</a>
-  <a href="#electricite">Électricité</a><a href="#hydraulique">Refroidissement et chaleur</a><a href="#bruit">Bruit</a>
+  <a href="#electricite">Électricité</a><a href="#hydraulique">Refroidissement et chaleur</a><a href="#vegetation">Végétation</a><a href="#bruit">Bruit</a>
   <a href="#hypotheses">Hypothèses et sources</a><a href="../">Autres campus</a>
 </nav>
 <main>
@@ -70,6 +70,7 @@ tr:nth-child(even) td{background:var(--card)}
         <dt>Fiabilité</dt><dd>Conception visant Uptime Tier III (maintenabilité concurrente)</dd>
         <dt>Refroidissement</dt><dd>Liquide direct 45 °C, refroidisseurs secs, aucune évaporation, aucun compresseur</dd>
         <dt>Bruit</dt><dd>≤ 35 dBA la nuit visé à la première résidence (calcul préliminaire 31 à 34 dBA)</dd>
+        <dt>Végétation</dt><dd>Butte de 5 m et trois rangées de conifères indigènes, écrans végétalisés, toits verts</dd>
         <dt>Chaleur</dt><dd>Serre de ~1 150 m² par campus, 1,35 ha de serres partagées, boucle vers un parc de serres voisin potentiel</dd>
         <dt>Souveraineté</dt><dd>Propriété et exploitation québécoises</dd>
       </dl>
@@ -100,9 +101,16 @@ tr:nth-child(even) td{background:var(--card)}
   <div class="plan"><img src="plans/hydro.svg" alt="Schéma hydraulique et bilan de chaleur"></div>
 </section>
 
+<section id="vegetation">
+  <h2>Végétation : cacher, absorber, retenir</h2>
+  <p class="lead">Une butte de 5 m portant trois rangées de conifères indigènes (épinette blanche, thuya occidental, pin blanc) ceinture l’ouest, le nord et l’est. Les écrans acoustiques sont végétalisés et les dix toits sont verts. Du rez-de-chaussée des maisons voisines, la butte seule cache les bâtiments de 9 m ; depuis l’étage, les conifères prennent le relais, et ils restent verts l’hiver.</p>
+  <div class="plan"><img src="plans/sightline.svg" alt="Coupe de visibilité depuis une maison de la rue Larose"></div>
+  <p class="cap">Sur le bruit, soyons précis : une bande boisée dense de ~30 m n’ajoute que ~1,5 à 2 dB aux basses et moyennes fréquences (formule de Hoover, Bies et Hansen ; voir aussi ISO 9613-2:2024, annexe A). Ce gain n’est pas compté dans nos calculs : il sert de marge. Les toits végétalisés retiennent une partie des pluies avant le bassin.</p>
+</section>
+
 <section id="bruit">
   <h2>Bruit de nuit</h2>
-  <p class="lead">Calcul simplifié : divergence géométrique hémisphérique, 2 dB d’effet de sol, 12 dB d’écran pour les cours, butte non comptée. Puissance acoustique visée par campus la nuit : 90 dB(A). Poste client : 92 dB(A). Une étude ISO 9613-2 complète, avec mesure du bruit de fond, suivra.</p>
+  <p class="lead">Calcul simplifié : divergence géométrique hémisphérique, 2 dB d’effet de sol, 12 dB d’écran pour les cours, butte non comptée. Puissance acoustique visée par campus la nuit : 90 dB(A). Végétation non comptée (marge de ~1,5 à 2 dB). Poste client : 92 dB(A). Une étude ISO 9613-2 complète, avec mesure du bruit de fond, suivra.</p>
   <div class="plan"><img src="plans/noise_map.svg" alt="Carte de bruit de nuit"></div>
   <table>
     <tr><th>Récepteur</th><th>Niveau calculé la nuit</th><th>Critère Québec (zone I, nuit)</th><th>Cible Orio</th></tr>

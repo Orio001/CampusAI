@@ -36,7 +36,7 @@ const mat={
   gen:M(0x5b6b58,{roughness:.6,metalness:.2}),trafo:M(0x7d8792,{metalness:.4,roughness:.5}),screen:M(0x8e9a88,{roughness:.9}),
   rack:M(0x1d222a,{roughness:.5,metalness:.4}),led:new THREE.MeshBasicMaterial({color:0x4aa3ff}),cdu:M(0xc9ccd1),floor:M(0xb9bdc2),
   hot:M(0xd0453a,{roughness:.4,metalness:.3}),cold:M(0x3a7bd5,{roughness:.4,metalness:.3}),
-  berm:M(0x93ad74,{roughness:1}),trunk:M(0x7a6248),leaf:M(0x6fa24c,{roughness:.9}),leaf2:M(0x5d8f42,{roughness:.9}),
+  berm:M(0x93ad74,{roughness:1}),conif:M(0x2c5527,{roughness:.95}),conif2:M(0x386a31,{roughness:.95}),greenRoof:M(0x8fae6a,{roughness:1}),vegScreen:M(0x6e8f55,{roughness:1}),trunk:M(0x7a6248),leaf:M(0x6fa24c,{roughness:.9}),leaf2:M(0x5d8f42,{roughness:.9}),
   water:M(0x9cc3d6,{roughness:.15,metalness:.1}),house:M(0xece6dc),houseRoof:M(0x7b6f66),car:M(0x9aa6b4,{metalness:.5,roughness:.35}),
   fence:M(0x8c96a0,{transparent:true,opacity:.35,depthWrite:false}),pylon:M(0x9aa3ad,{metalness:.6,roughness:.4}),
   hqBand:new THREE.MeshBasicMaterial({color:0xe08a2e,transparent:true,opacity:.14,depthWrite:false}),
@@ -68,8 +68,10 @@ const CX=[];for(let i=0;i<10;i++)CX.push(-121+i*38);
 const BW=32, YARD=[-95,-59], BLDG=[-59,-19], GH=[-19,17];   // z ranges (north = negative z)
 const site=new THREE.Group();scene.add(site);
 const trunkGeo=new THREE.CylinderGeometry(0.35,0.45,1,6),leafGeo=new THREE.IcosahedronGeometry(1,1);
-const TT=[],TL=[],TL2=[];
+const TT=[],TL=[],TL2=[],CN=[],CN2=[];
 function tree(x,z,h,y0=0){const s=h*0.32;TT.push([x,y0+h*0.3,z,1,h*0.6,1]);(rnd()<.5?TL:TL2).push([x,y0+h*0.72,z,s,s*1.1,s]);}
+const coneGeo=new THREE.ConeGeometry(1,1,8);coneGeo.translate(0,0.5,0);
+function conifer(x,z,h,y0=0){const r=h*0.24;TT.push([x,y0+0.6,z,0.5,1.2,0.5]);(rnd()<.5?CN:CN2).push([x,y0+0.8,z,r,h,r]);}
 
 if(!ISO){
 plane(scene,0,0,5000,5000,mat.ground,-0.4);
@@ -95,8 +97,10 @@ function berm(x,z,w,d,h){const g=new THREE.BoxGeometry(1,1,1);const pos=g.attrib
   for(let i=0;i<pos.count;i++){if(pos.getY(i)>0){if(w>d)pos.setZ(i,pos.getZ(i)*0.35);else pos.setX(i,pos.getX(i)*0.35);}}
   g.computeVertexNormals();const o=new THREE.Mesh(g,mat.berm);o.scale.set(w,h,d);o.position.set(x,h/2-0.3,z);o.receiveShadow=true;o.castShadow=true;site.add(o);}
 berm(-254,0,12,242,5);berm(6,-115,496,12,5);berm(254,0,12,242,5);
-for(let z=-118;z<=118;z+=7)tree(-254+(rnd()-.5)*3,z,8+rnd()*4,4.4);
-for(let x=-246;x<=250;x+=8)tree(x,-115+(rnd()-.5)*3,7+rnd()*4,4.4);
+for(const xo of [-258,-254,-250])for(let z=-118;z<=118;z+=5)conifer(xo+(rnd()-.5)*1.5,z+(xo===-254?2.5:0),9+rnd()*4,xo===-254?4.6:2.5);
+for(const zo of [-119,-115,-111])for(let x=-246;x<=250;x+=5.5)conifer(x+(zo===-115?2.7:0),zo+(rnd()-.5)*1.2,8+rnd()*4,zo===-115?4.6:2.5);
+for(const xo of [252,256])for(let z=-105;z<=118;z+=5.5)conifer(xo,z+(xo===256?2.7:0),8+rnd()*3,3.5);
+for(let x=-246;x<=160;x+=9){if(Math.abs(x+150)<12)continue;tree(x,118,8+rnd()*3);}
 // servitude Hydro-Québec (bande diagonale, tampon ouest)
 {const a=new THREE.Vector2(-247,121),b=new THREE.Vector2(-193,-121);const dir=b.clone().sub(a);
  const band=new THREE.Mesh(new THREE.PlaneGeometry(30,dir.length()+60),mat.hqBand);band.rotation.x=-Math.PI/2;band.rotation.z=Math.atan2(dir.x,dir.y);
@@ -169,7 +173,7 @@ function campus(cx,idx,cut){
     for(let k=0;k<5;k++)CDUS.push([cx-12+k*6,0,bz1-7,2.2,2.2,2.4]);
     box(g,cx,0,bz1-10,BW-1,3.5,0.25,mat.fin);
   }else{
-    box(g,cx,-0.3,bzc,BW,H,bd,mat.bldg);box(g,cx,H-0.3,bzc,BW+0.4,0.5,bd+0.4,mat.roof);
+    box(g,cx,-0.3,bzc,BW,H,bd,mat.bldg);box(g,cx,H-0.3,bzc,BW+0.4,0.5,bd+0.4,mat.greenRoof);
     const fins=[];for(let x=cx-BW/2+1.5;x<cx+BW/2;x+=2.5){fins.push([x,0,bz1+0.15,0.25,H-0.4,0.3]);}inst(g,fins,mat.fin);
     box(g,cx,H-1.6,bz1+0.35,BW,0.5,0.1,mat.stripe,false);
   }
@@ -190,21 +194,21 @@ inst(site,RACKS,mat.rack);inst(site,LEDS,mat.led,false);inst(site,CDUS,mat.cdu);
  COOL.forEach((b,i)=>{o.position.set(b[0],b[1]+b[4]/2,b[2]);o.scale.set(b[3],b[4],b[5]);o.rotation.set(0,0,0);o.updateMatrix();im.setMatrixAt(i,o.matrix);});
  im.castShadow=true;im.receiveShadow=true;site.add(im);
  const legs=[];COOL.forEach(b=>{for(const sx of [-1,1])for(const sz of [-1,1])legs.push([b[0]+sx*(b[3]/2-0.3),-0.3,b[2]+sz*(b[5]/2-0.2),0.15,1.1,0.15]);});inst(site,legs,mat.coolerFrame);}
-inst(site,GENS,mat.gen);inst(site,TRAF,mat.trafo);inst(site,RAD,mat.coolerFrame);inst(site,SCR,mat.screen);
-inst(scene,TT,mat.trunk,true,trunkGeo);inst(scene,TL,mat.leaf,true,leafGeo);inst(scene,TL2,mat.leaf2,true,leafGeo);
+inst(site,GENS,mat.gen);inst(site,TRAF,mat.trafo);inst(site,RAD,mat.coolerFrame);inst(site,SCR,mat.vegScreen);
+inst(scene,TT,mat.trunk,true,trunkGeo);inst(scene,TL,mat.leaf,true,leafGeo);inst(scene,TL2,mat.leaf2,true,leafGeo);inst(scene,CN,mat.conif,true,coneGeo);inst(scene,CN2,mat.conif2,true,coneGeo);
 
 /* ---------------- étiquettes ---------------- */
 const LABELS={
- aerial:[['RÉSIDENCES EXISTANTES','Rues Larose, Ostiguy, Girard',[-330,6,60],'#9aa3ad'],['BUTTE PLANTÉE 5 m','Ouest, nord et est',[-150,9,-117],'#5f9a45'],
+ aerial:[['RÉSIDENCES EXISTANTES','Rues Larose, Ostiguy, Girard',[-330,6,60],'#9aa3ad'],['BUTTE 5 m + ÉCRAN DE CONIFÈRES','Trois rangées, essences indigènes',[-150,12,-117],'#5f9a45'],
   ['BASSIN DE RÉTENTION','Eaux pluviales',[-208,1,40],'#3a7bd5'],['EXPLOITATION · NOC','Sécurité, stationnement solaire',[-208,9,-44],'#fef100'],
-  ['10 CAMPUS DÉDIÉS · 5 MW','Un client par campus, Tier III',[-6,11,-40],'#fef100'],['SERRE SUR CHAQUE CAMPUS','~1 150 m², eau de retour des TI',[-110,7,-2],'#5f9a45'],
+  ['10 CAMPUS DÉDIÉS · 5 MW','Toits végétalisés, Tier III',[-6,11,-40],'#fef100'],['SERRE SUR CHAQUE CAMPUS','~1 150 m², eau de retour des TI',[-110,7,-2],'#5f9a45'],
   ['SERRES PARTAGÉES','~1,35 ha',[40,7,95],'#5f9a45'],
   ['POSTE CLIENT 120/25 kV','3 × 47 MVA (N+1)',[209,13,70],'#fef100'],['POSTE SAINT-CÉSAIRE','Hydro-Québec, 230-120-49-25 kV',[40,12,262],'#e08a2e'],
   ['ACCÈS PAR LA ROUTE 112','Aucun camion rue Larose',[-150,1,160],'#1a1a1a'],['PARC DE SERRES POTENTIEL','Terres agricoles voisines',[330,6,-25],'#5f9a45']],
  plan:[],
  campus:[['SALLE TI · 5 MW','~25 baies, liquide direct 45 °C',[-6,3,-38],'#fef100'],['SALLES ÉLECTRIQUES A / B','UPS Li-ion, coupe-feu',[-12,5,-55],'#fef100'],
   ['TRANSFORMATEURS A1 A2 B1 B2','25/0,6 kV, ester naturel',[14,3,-61],'#7d8792'],['GÉNÉRATRICES N+1','4 × 2 MWe continues, HVO',[-20,4,-72],'#5b6b58'],
-  ['REFROIDISSEURS SECS','8 unités, sans eau',[14,4,-88],'#3a7bd5'],['ÉCRAN ACOUSTIQUE 6,5 m','Absorbant, trois côtés',[17,7,-76],'#5f9a45'],
+  ['REFROIDISSEURS SECS','8 unités, sans eau',[14,4,-88],'#3a7bd5'],['ÉCRAN ACOUSTIQUE VÉGÉTALISÉ','6,5 m, absorbant, trois côtés',[17,7,-76],'#5f9a45'],
   ['SERRE · 1 150 m²','Rails basse température',[-6,8,0],'#5f9a45'],['EAU CHAUDE ~48 °C','Vers la serre puis la boucle partagée',[15,1,12],'#d0453a']]
 };
 let cam;

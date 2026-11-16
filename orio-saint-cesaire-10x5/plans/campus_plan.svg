@@ -215,6 +215,8 @@
 <rect x="490.0" y="815.0" width="400.0" height="90.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.8" opacity="1"/>
 <text x="690.0" y="863.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">Bâtiment TI · 1 étage · 9 m</text>
 <rect x="490.0" y="899.0" width="400.0" height="6.0" rx="0" fill="#FEF100" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="490.0" y="810.0" width="400.0" height="5.0" rx="0" fill="#8FAE6A" stroke="#5F9A45" stroke-width="1" opacity="1"/>
+<text x="690.0" y="803.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#2F5E1F" text-anchor="middle">Toit végétalisé (rétention des pluies)</text>
 <text x="690.0" y="923.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="middle">Dalle isolée</text>
 <rect x="910.0" y="873.0" width="36.0" height="32.0" rx="0" fill="#7D8792" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
 <rect x="970.0" y="869.0" width="110.0" height="36.0" rx="0" fill="#9AA58F" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
@@ -231,9 +233,12 @@
 <line x1="1213.0" y1="895.0" x2="1213.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
 <line x1="1233.0" y1="895.0" x2="1233.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
 <rect x="1254.0" y="840.0" width="5.0" height="65.0" rx="0" fill="#4E5A49" stroke="none" stroke-width="1" opacity="1"/>
-<text x="1250.0" y="834.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#4E5A49" text-anchor="end">Écran 6,5 m</text>
+<text x="1250.0" y="834.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#4E5A49" text-anchor="end">Écran végétalisé 6,5 m</text>
 <polygon points="1320.0,905.0 1360.0,855.0 1390.0,855.0 1430.0,905.0" fill="#C9DDB7" stroke="#5F9A45" stroke-width="1.2" opacity="1"/>
-<circle cx="1375.0" cy="825.0" r="26.0" fill="#A9C98F" stroke="#5F9A45" stroke-width="1"/>
+<polygon points="1336.0,855.0 1352.0,745.0 1368.0,855.0" fill="#3F6B3A" stroke="#2C4F27" stroke-width="1" opacity="1"/>
+<polygon points="1359.0,855.0 1375.0,730.0 1391.0,855.0" fill="#3F6B3A" stroke="#2C4F27" stroke-width="1" opacity="1"/>
+<polygon points="1382.0,855.0 1398.0,750.0 1414.0,855.0" fill="#3F6B3A" stroke="#2C4F27" stroke-width="1" opacity="1"/>
+<text x="1375.0" y="715.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#2F5E1F" text-anchor="middle">Conifères indigènes</text>
 <text x="1375.0" y="925.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#2F5E1F" text-anchor="middle">Butte 5 m</text>
 <line x1="70.0" y1="760.0" x2="260.0" y2="833.0" stroke="#E08A2E" stroke-width="1.6" marker-end="url(#arr)" opacity="1"/>
 <text x="60.0" y="750.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#8A5418" text-anchor="start">Soleil de midi au solstice d’hiver : 21° (45,4° N)</text>
@@ -280,7 +285,7 @@
 <text x="1530.0" y="364.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">1 152 m², eau de retour TI</text>
 <rect x="1390.0" y="374.0" width="390.0" height="25.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
 <text x="1398.0" y="391.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Hauteur</text>
-<text x="1530.0" y="391.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">9 m, un seul étage</text>
+<text x="1530.0" y="391.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">9 m, un étage, toit végétalisé</text>
 <rect x="1390.0" y="401.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
 <text x="1398.0" y="418.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Sécurité</text>
 <text x="1530.0" y="418.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">Clôture et accès propres au client</text>

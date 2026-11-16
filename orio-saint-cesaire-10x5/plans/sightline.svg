@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 640" width="1500" height="640"><defs><marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1A1A1A"/></marker>
+<marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#D0453A"/></marker>
+<marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#3A7BD5"/></marker>
+<marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M2,8 L8,2" stroke="#1A1A1A" stroke-width="1.4"/></marker>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#B9B9B5" stroke-width="1.2"/></pattern>
+<pattern id="hatchG" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#9DBF86" stroke-width="1.6"/></pattern>
+<pattern id="hatchO" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#E9B47A" stroke-width="1.4"/></pattern>
+<pattern id="grid" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M6 0 L0 0 0 6" fill="none" stroke="#B8D4A6" stroke-width="0.8"/></pattern></defs><rect width="100%" height="100%" fill="#FFFFFF"/><text x="30.0" y="46.0" font-family="Roboto, Arial, sans-serif" font-size="30" font-weight="900" fill="#1A1A1A" text-anchor="start">Coupe de visibilité ouest · verticale × 4</text>
+<line x1="8.8" y1="540.0" x2="1372.0" y2="540.0" stroke="#1A1A1A" stroke-width="2" opacity="1"/>
+<polygon points="21.6,540.0 21.6,435.5 60.0,388.0 98.4,435.5 98.4,540.0" fill="#ECE6DC" stroke="#1A1A1A" stroke-width="1.5" opacity="1"/>
+<circle cx="60.0" cy="509.6" r="8" fill="#FEF100" stroke="#1A1A1A" stroke-width="1.5"/>
+<circle cx="60.0" cy="454.5" r="8" fill="#FEF100" stroke="#1A1A1A" stroke-width="1.5"/>
+<text x="60.0" y="574.0" font-family="Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="middle">Maison</text>
+<polygon points="348.0,540.0 373.6,445.0 399.2,445.0 424.8,540.0" fill="#C9DDB7" stroke="#5F9A45" stroke-width="1.5" opacity="1"/>
+<polygon points="360.8,445.0 370.4,255.0 380.0,445.0" fill="#3F6B3A" stroke="#2C4F27" stroke-width="1" opacity="1"/>
+<polygon points="376.8,445.0 386.4,255.0 396.0,445.0" fill="#3F6B3A" stroke="#2C4F27" stroke-width="1" opacity="1"/>
+<polygon points="392.8,445.0 402.4,255.0 412.0,445.0" fill="#3F6B3A" stroke="#2C4F27" stroke-width="1" opacity="1"/>
+<text x="386.4" y="574.0" font-family="Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#2F5E1F" text-anchor="middle">Butte + conifères</text>
+<rect x="1135.2" y="369.0" width="204.8" height="171.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2" opacity="1"/>
+<rect x="1135.2" y="359.5" width="204.8" height="9.5" rx="0" fill="#8FAE6A" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1237.6" y="462.5" font-family="Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="middle">Campus 9 m</text>
+<line x1="60.0" y1="509.6" x2="1372.0" y2="249.9" stroke="#D0453A" stroke-width="3" stroke-dasharray="12 6" opacity="1"/>
+<line x1="60.0" y1="454.5" x2="666.2" y2="84.0" stroke="#E08A2E" stroke-width="3" stroke-dasharray="12 6" opacity="1"/>
+<text x="456.8" y="471.6" font-family="Roboto, Arial, sans-serif" font-size="22" font-weight="700" fill="#D0453A" text-anchor="start">Rez-de-chaussée : la butte seule cache le campus</text>
+<text x="456.8" y="496.3" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="400" fill="#D0453A" text-anchor="start">(ligne de vue à 12,8 m au droit du bâtiment)</text>
+<text x="700.0" y="160.0" font-family="Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#B5651D" text-anchor="start">Étage : les conifères prennent le relais</text></svg>
