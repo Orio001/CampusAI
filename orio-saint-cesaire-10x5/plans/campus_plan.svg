@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" width="1800" height="1000"><defs><marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1A1A1A"/></marker>
+<marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#D0453A"/></marker>
+<marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#3A7BD5"/></marker>
+<marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M2,8 L8,2" stroke="#1A1A1A" stroke-width="1.4"/></marker>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#B9B9B5" stroke-width="1.2"/></pattern>
+<pattern id="hatchG" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#9DBF86" stroke-width="1.6"/></pattern>
+<pattern id="hatchO" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#E9B47A" stroke-width="1.4"/></pattern>
+<pattern id="grid" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M6 0 L0 0 0 6" fill="none" stroke="#B8D4A6" stroke-width="0.8"/></pattern></defs><rect width="100%" height="100%" fill="#FFFFFF"/><text x="110.0" y="60.0" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="900" fill="#1A1A1A" text-anchor="start">PLAN TYPE · CAMPUS DÉDIÉ 5 MW TI (× 10)</text>
+<text x="110.0" y="84.0" font-family="Roboto, Arial, sans-serif" font-size="13" font-weight="400" fill="#555555" text-anchor="start">Vue en plan, nord à droite. Parcelle clôturée propre au client : bâtiment, cour technique, serre, entrées fibre et accès distincts.</text>
+<rect x="110.0" y="150.0" width="1160.0" height="360.0" rx="0" fill="#FAFAF8" stroke="#8C8C8C" stroke-width="1.2" stroke-dasharray="6 4" opacity="1"/>
+<text x="114.0" y="526.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Clôture de parcelle (zone sécurisée client)</text>
+<rect x="130.0" y="170.0" width="360.0" height="320.0" rx="0" fill="url(#grid)" stroke="#5F9A45" stroke-width="1.6" opacity="1"/>
+<line x1="150.0" y1="190.0" x2="470.0" y2="190.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="230.0" x2="470.0" y2="230.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="270.0" x2="470.0" y2="270.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="310.0" x2="470.0" y2="310.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="350.0" x2="470.0" y2="350.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="390.0" x2="470.0" y2="390.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="430.0" x2="470.0" y2="430.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<line x1="150.0" y1="470.0" x2="470.0" y2="470.0" stroke="#7FAF62" stroke-width="1.2" opacity="1"/>
+<rect x="251.2" y="229.0" width="117.5" height="22.0" rx="2" fill="#5F9A45" stroke="none" stroke-width="1" opacity="1"/>
+<text x="256.2" y="244.3" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">SERRE · 1 152 m²</text>
+<text x="310.0" y="290.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#2F5E1F" text-anchor="middle">chauffage par rails basse température</text>
+<text x="310.0" y="306.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#2F5E1F" text-anchor="middle">alimentés par l’eau de retour des TI</text>
+<circle cx="170.0" cy="460.0" r="22.0" fill="#CFE3F2" stroke="#3A7BD5" stroke-width="1.2"/>
+<text x="170.0" y="464.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="700" fill="#1F4E85" text-anchor="middle">Citerne</text>
+<text x="210.0" y="464.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#1F4E85" text-anchor="start">eau de pluie des toits</text>
+<rect x="490.0" y="170.0" width="400.0" height="320.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.4" opacity="1"/>
+<rect x="490.0" y="170.0" width="40.0" height="70.0" rx="0" fill="#E8EEF8" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="510.0" y="209.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">MMR A</text>
+<rect x="490.0" y="420.0" width="40.0" height="70.0" rx="0" fill="#E8EEF8" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="510.0" y="459.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">MMR B</text>
+<rect x="490.0" y="240.0" width="40.0" height="180.0" rx="0" fill="#F3F3F1" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="510.0" y="334.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 510.0 334.0)">Quai · sas · sécurité</text>
+<rect x="530.0" y="170.0" width="80.0" height="320.0" rx="0" fill="#EEF4FA" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="550.0" y="200.0" width="25.0" height="40.0" rx="0" fill="#C9CCD1" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="562.5" y="224.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 562.5 224.0)">CDU1</text>
+<rect x="550.0" y="255.0" width="25.0" height="40.0" rx="0" fill="#C9CCD1" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="562.5" y="279.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 562.5 279.0)">CDU2</text>
+<rect x="550.0" y="310.0" width="25.0" height="40.0" rx="0" fill="#C9CCD1" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="562.5" y="334.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 562.5 334.0)">CDU3</text>
+<rect x="550.0" y="365.0" width="25.0" height="40.0" rx="0" fill="#C9CCD1" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="562.5" y="389.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 562.5 389.0)">CDU4</text>
+<rect x="550.0" y="420.0" width="25.0" height="40.0" rx="0" fill="#C9CCD1" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="562.5" y="444.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 562.5 444.0)">CDU5</text>
+<rect x="585.0" y="200.0" width="18.0" height="70.0" rx="0" fill="#F6D9D5" stroke="#D0453A" stroke-width="1" opacity="1"/>
+<text x="594.0" y="235.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="700" fill="#8E2A22" text-anchor="middle" transform="rotate(-90 594.0 235.0)">ÉCH. RÉCUP.</text>
+<rect x="585.0" y="390.0" width="18.0" height="70.0" rx="0" fill="#D6E4F5" stroke="#3A7BD5" stroke-width="1" opacity="1"/>
+<text x="594.0" y="425.0" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="700" fill="#1F4E85" text-anchor="middle" transform="rotate(-90 594.0 425.0)">POMPES FWS</text>
+<text x="570.0" y="482.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">Salle méca.</text>
+<rect x="610.0" y="170.0" width="200.0" height="320.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="660.0" y="187.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="209.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="231.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="253.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="275.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="297.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="319.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="341.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="363.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="385.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="407.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="429.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="660.0" y="451.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="654.0" y1="180.0" x2="654.0" y2="480.0" stroke="#D0453A" stroke-width="1.6" opacity="1"/>
+<line x1="651.0" y1="180.0" x2="651.0" y2="480.0" stroke="#3A7BD5" stroke-width="1.6" opacity="1"/>
+<line x1="676.0" y1="180.0" x2="676.0" y2="480.0" stroke="#C7A100" stroke-width="2.2" opacity="1"/>
+<line x1="679.0" y1="180.0" x2="679.0" y2="480.0" stroke="#E08A2E" stroke-width="2.2" opacity="1"/>
+<rect x="740.0" y="187.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="209.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="231.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="253.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="275.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="297.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="319.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="341.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="363.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="385.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="407.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="429.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="740.0" y="451.0" width="12.0" height="6.0" rx="0" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="734.0" y1="180.0" x2="734.0" y2="480.0" stroke="#D0453A" stroke-width="1.6" opacity="1"/>
+<line x1="731.0" y1="180.0" x2="731.0" y2="480.0" stroke="#3A7BD5" stroke-width="1.6" opacity="1"/>
+<line x1="756.0" y1="180.0" x2="756.0" y2="480.0" stroke="#C7A100" stroke-width="2.2" opacity="1"/>
+<line x1="759.0" y1="180.0" x2="759.0" y2="480.0" stroke="#E08A2E" stroke-width="2.2" opacity="1"/>
+<rect x="571.3" y="147.0" width="277.4" height="22.0" rx="2" fill="#1A1A1A" stroke="none" stroke-width="1" opacity="1"/>
+<circle cx="580.3" cy="158.0" r="4" fill="#FEF100" stroke="#FFFFFF" stroke-width="1"/>
+<text x="588.3" y="162.3" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">SALLE TI · 640 m² · ~25 baies × 200 kW</text>
+<rect x="810.0" y="170.0" width="80.0" height="157.0" rx="0" fill="#FFF9B8" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="810.0" y="333.0" width="80.0" height="157.0" rx="0" fill="#FFE7C2" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<line x1="810.0" y1="330.0" x2="890.0" y2="330.0" stroke="#D0453A" stroke-width="3" opacity="1"/>
+<text x="850.0" y="220.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="900" fill="#1A1A1A" text-anchor="middle">ÉLECTRIQUE A</text>
+<text x="850.0" y="237.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#1A1A1A" text-anchor="middle">UPS · TGBT 600 V</text>
+<text x="850.0" y="380.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="900" fill="#1A1A1A" text-anchor="middle">ÉLECTRIQUE B</text>
+<text x="850.0" y="397.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#1A1A1A" text-anchor="middle">UPS · TGBT 600 V</text>
+<text x="894.0" y="334.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="700" fill="#D0453A" text-anchor="start">Mur coupe-feu</text>
+<rect x="890.0" y="170.0" width="360.0" height="320.0" rx="0" fill="#E6E6E3" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="910.0" y="185.0" width="36.0" height="32.0" rx="0" fill="#7D8792" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="928.0" y="205.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">A1</text>
+<rect x="904.0" y="181.0" width="48.0" height="40.0" rx="0" fill="none" stroke="#8C8C8C" stroke-width="0.8" stroke-dasharray="2 2" opacity="1"/>
+<rect x="910.0" y="235.0" width="36.0" height="32.0" rx="0" fill="#7D8792" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="928.0" y="255.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">A2</text>
+<rect x="904.0" y="231.0" width="48.0" height="40.0" rx="0" fill="none" stroke="#8C8C8C" stroke-width="0.8" stroke-dasharray="2 2" opacity="1"/>
+<rect x="910.0" y="385.0" width="36.0" height="32.0" rx="0" fill="#7D8792" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="928.0" y="405.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">B1</text>
+<rect x="904.0" y="381.0" width="48.0" height="40.0" rx="0" fill="none" stroke="#8C8C8C" stroke-width="0.8" stroke-dasharray="2 2" opacity="1"/>
+<rect x="910.0" y="435.0" width="36.0" height="32.0" rx="0" fill="#7D8792" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="928.0" y="455.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">B2</text>
+<rect x="904.0" y="431.0" width="48.0" height="40.0" rx="0" fill="none" stroke="#8C8C8C" stroke-width="0.8" stroke-dasharray="2 2" opacity="1"/>
+<rect x="910.0" y="280.0" width="36.0" height="35.0" rx="0" fill="#FFF9B8" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="928.0" y="300.5" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle">MT A</text>
+<rect x="910.0" y="345.0" width="36.0" height="35.0" rx="0" fill="#FFE7C2" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<text x="928.0" y="365.5" font-family="Roboto, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="middle">MT B</text>
+<rect x="970.0" y="209.0" width="110.0" height="32.0" rx="0" fill="#9AA58F" stroke="#1A1A1A" stroke-width="0.9" opacity="1"/>
+<text x="1025.0" y="229.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">G1 · 2 MWe</text>
+<rect x="970.0" y="280.0" width="110.0" height="32.0" rx="0" fill="#9AA58F" stroke="#1A1A1A" stroke-width="0.9" opacity="1"/>
+<text x="1025.0" y="300.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">G2 · 2 MWe</text>
+<rect x="970.0" y="351.0" width="110.0" height="32.0" rx="0" fill="#9AA58F" stroke="#1A1A1A" stroke-width="0.9" opacity="1"/>
+<text x="1025.0" y="371.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">G3 · 2 MWe</text>
+<rect x="970.0" y="422.0" width="110.0" height="32.0" rx="0" fill="#9AA58F" stroke="#1A1A1A" stroke-width="0.9" opacity="1"/>
+<text x="1025.0" y="442.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">G4 · 2 MWe</text>
+<rect x="1105.0" y="180.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1118.0" cy="192.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1118.0" cy="216.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1118.0" cy="240.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1118.0" cy="264.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1105.0" y="384.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1118.0" cy="396.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1118.0" cy="420.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1118.0" cy="444.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1118.0" cy="468.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1140.0" y="180.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1153.0" cy="192.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1153.0" cy="216.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1153.0" cy="240.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1153.0" cy="264.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1140.0" y="384.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1153.0" cy="396.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1153.0" cy="420.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1153.0" cy="444.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1153.0" cy="468.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1175.0" y="180.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1188.0" cy="192.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1188.0" cy="216.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1188.0" cy="240.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1188.0" cy="264.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1175.0" y="384.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1188.0" cy="396.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1188.0" cy="420.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1188.0" cy="444.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1188.0" cy="468.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1210.0" y="180.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1223.0" cy="192.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1223.0" cy="216.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1223.0" cy="240.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1223.0" cy="264.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<rect x="1210.0" y="384.0" width="26.0" height="96.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<circle cx="1223.0" cy="396.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1223.0" cy="420.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1223.0" cy="444.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<circle cx="1223.0" cy="468.0" r="9.0" fill="#2F343A" stroke="#8A9098" stroke-width="0.6"/>
+<text x="1163.0" y="324.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">8 REFROIDISSEURS</text>
+<text x="1163.0" y="343.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">SECS · N+1</text>
+<polyline points="890.0,158.0 1256.0,158.0 1256.0,502.0 890.0,502.0" fill="none" stroke="#4E5A49" stroke-width="5" opacity="1"/>
+<text x="1070.0" y="524.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#4E5A49" text-anchor="middle">Écran acoustique absorbant 6,5 m sur trois côtés</text>
+<text x="1070.0" y="144.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Cour technique · génératrices à réservoir de base double paroi (HVO)</text>
+<line x1="603.0" y1="496.0" x2="1230.0" y2="496.0" stroke="#D0453A" stroke-width="2" opacity="1"/>
+<line x1="603.0" y1="502.0" x2="1230.0" y2="502.0" stroke="#3A7BD5" stroke-width="2" opacity="1"/>
+<line x1="585.0" y1="164.0" x2="130.0" y2="164.0" stroke="#D0453A" stroke-width="2" marker-end="url(#arrR)" opacity="1"/>
+<line x1="585.0" y1="158.0" x2="110.0" y2="158.0" stroke="#3A7BD5" stroke-width="2" opacity="1"/>
+<text x="330.0" y="150.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#8E2A22" text-anchor="middle">Eau chaude vers la serre, puis la boucle partagée</text>
+<line x1="510.0" y1="170.0" x2="510.0" y2="110.0" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="5 3" opacity="1"/>
+<line x1="510.0" y1="490.0" x2="510.0" y2="550.0" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="5 3" opacity="1"/>
+<text x="516.0" y="120.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#6D3FD0" text-anchor="start">Fibre voie A</text>
+<text x="516.0" y="550.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#6D3FD0" text-anchor="start">Fibre voie B</text>
+<line x1="110.0" y1="150.0" x2="110.0" y2="96.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="1270.0" y1="150.0" x2="1270.0" y2="96.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="110.0" y1="102.0" x2="1270.0" y2="102.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="669.0" y="93.0" width="42.0" height="13.2" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="690.0" y="105.6" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="middle">116 m</text>
+<line x1="130.0" y1="510.0" x2="130.0" y2="552.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="490.0" y1="510.0" x2="490.0" y2="552.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="130.0" y1="546.0" x2="490.0" y2="546.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="293.8" y="537.8" width="32.4" height="12.1" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="310.0" y="549.3" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="middle">36 m</text>
+<line x1="490.0" y1="510.0" x2="490.0" y2="552.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="890.0" y1="510.0" x2="890.0" y2="552.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="490.0" y1="546.0" x2="890.0" y2="546.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="673.8" y="537.8" width="32.4" height="12.1" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="690.0" y="549.3" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="middle">40 m</text>
+<line x1="890.0" y1="510.0" x2="890.0" y2="552.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="1250.0" y1="510.0" x2="1250.0" y2="552.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="890.0" y1="546.0" x2="1250.0" y2="546.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="1053.8" y="537.8" width="32.4" height="12.1" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1070.0" y="549.3" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="middle">36 m</text>
+<line x1="1270.0" y1="150.0" x2="1306.0" y2="150.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="1270.0" y1="510.0" x2="1306.0" y2="510.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="1300.0" y1="150.0" x2="1300.0" y2="510.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="1291.8" y="313.8" width="12.1" height="32.4" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1303.3" y="330.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 1303.3 330.0)">36 m</text>
+<line x1="490.0" y1="170.0" x2="454.0" y2="170.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="490.0" y1="490.0" x2="454.0" y2="490.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="460.0" y1="170.0" x2="460.0" y2="490.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="451.8" y="313.8" width="12.1" height="32.4" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="463.3" y="330.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 463.3 330.0)">32 m</text>
+<g transform="rotate(90 1330 250)">
+<circle cx="1330.0" cy="250.0" r="18" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+<polygon points="1330.0,235.0 1338.0,260.0 1330.0,254.0 1322.0,260.0" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="1330.0" y="226.0" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#1A1A1A" text-anchor="middle">N</text>
+</g>
+<text x="110.0" y="640.0" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="900" fill="#1A1A1A" text-anchor="start">COUPE A-A (axe nord-sud du campus, même échelle)</text>
+<line x1="50.0" y1="905.0" x2="1410.0" y2="905.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<polygon points="130.0,905.0 130.0,860.0 310.0,833.0 490.0,860.0 490.0,905.0" fill="#EAF3E3" stroke="#5F9A45" stroke-width="1.6" opacity="1"/>
+<text x="310.0" y="883.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#2F5E1F" text-anchor="middle">Serre · faîte 7,2 m</text>
+<rect x="490.0" y="815.0" width="400.0" height="90.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.8" opacity="1"/>
+<text x="690.0" y="863.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">Bâtiment TI · 1 étage · 9 m</text>
+<rect x="490.0" y="899.0" width="400.0" height="6.0" rx="0" fill="#FEF100" stroke="none" stroke-width="1" opacity="1"/>
+<text x="690.0" y="923.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="middle">Dalle isolée</text>
+<rect x="910.0" y="873.0" width="36.0" height="32.0" rx="0" fill="#7D8792" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<rect x="970.0" y="869.0" width="110.0" height="36.0" rx="0" fill="#9AA58F" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<rect x="1105.0" y="869.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1108.0" y1="895.0" x2="1108.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1128.0" y1="895.0" x2="1128.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<rect x="1140.0" y="869.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1143.0" y1="895.0" x2="1143.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1163.0" y1="895.0" x2="1163.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<rect x="1175.0" y="869.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1178.0" y1="895.0" x2="1178.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1198.0" y1="895.0" x2="1198.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<rect x="1210.0" y="869.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1213.0" y1="895.0" x2="1213.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<line x1="1233.0" y1="895.0" x2="1233.0" y2="905.0" stroke="#1A1A1A" stroke-width="0.8" opacity="1"/>
+<rect x="1254.0" y="840.0" width="5.0" height="65.0" rx="0" fill="#4E5A49" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1250.0" y="834.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#4E5A49" text-anchor="end">Écran 6,5 m</text>
+<polygon points="1320.0,905.0 1360.0,855.0 1390.0,855.0 1430.0,905.0" fill="#C9DDB7" stroke="#5F9A45" stroke-width="1.2" opacity="1"/>
+<circle cx="1375.0" cy="825.0" r="26.0" fill="#A9C98F" stroke="#5F9A45" stroke-width="1"/>
+<text x="1375.0" y="925.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#2F5E1F" text-anchor="middle">Butte 5 m</text>
+<line x1="70.0" y1="760.0" x2="260.0" y2="833.0" stroke="#E08A2E" stroke-width="1.6" marker-end="url(#arr)" opacity="1"/>
+<text x="60.0" y="750.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#8A5418" text-anchor="start">Soleil de midi au solstice d’hiver : 21° (45,4° N)</text>
+<text x="60.0" y="769.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A5418" text-anchor="start">la serre au sud du bâtiment n’est jamais à l’ombre de celui-ci</text>
+<line x1="890.0" y1="905.0" x2="910.0" y2="905.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="890.0" y1="815.0" x2="910.0" y2="815.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="904.0" y1="905.0" x2="904.0" y2="815.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="896.5" y="848.0" width="11.0" height="24.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="907.0" y="860.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="500" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 907.0 860.0)">9 m</text>
+<line x1="1270.0" y1="905.0" x2="1296.0" y2="905.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="1270.0" y1="840.0" x2="1296.0" y2="840.0" stroke="#8C8C8C" stroke-width="0.8" opacity="1"/>
+<line x1="1290.0" y1="905.0" x2="1290.0" y2="840.0" stroke="#1A1A1A" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)" opacity="1"/>
+<rect x="1282.5" y="854.5" width="11.0" height="36.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1293.0" y="872.5" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="500" fill="#1A1A1A" text-anchor="middle" transform="rotate(-90 1293.0 872.5)">6,5 m</text>
+<text x="70.0" y="927.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">SUD</text>
+<text x="1470.0" y="927.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="end">NORD</text>
+<text x="1390.0" y="120.0" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="900" fill="#1A1A1A" text-anchor="start">PROGRAMME DU CAMPUS</text>
+<rect x="1390.0" y="131.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="148.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Salle TI</text>
+<text x="1530.0" y="148.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">640 m², ~25 baies ~200 kW</text>
+<rect x="1390.0" y="158.0" width="390.0" height="25.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="175.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Refroidissement</text>
+<text x="1530.0" y="175.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">Liquide direct, 45 °C, CDU N+1</text>
+<rect x="1390.0" y="185.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="202.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Électricité</text>
+<text x="1530.0" y="202.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">Voies A et B séparées, coupe-feu</text>
+<rect x="1390.0" y="212.0" width="390.0" height="25.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="229.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Transformateurs</text>
+<text x="1530.0" y="229.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">4 × 3,5 MVA, 25 / 0,6 kV</text>
+<rect x="1390.0" y="239.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="256.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Génératrices</text>
+<text x="1530.0" y="256.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">4 × 2 MWe continues, N+1</text>
+<rect x="1390.0" y="266.0" width="390.0" height="25.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="283.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Autonomie</text>
+<text x="1530.0" y="283.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">≥ 12 h de carburant (HVO)</text>
+<rect x="1390.0" y="293.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="310.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Rejet de chaleur</text>
+<text x="1530.0" y="310.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">8 refroidisseurs secs, N+1</text>
+<rect x="1390.0" y="320.0" width="390.0" height="25.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="337.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Fibre</text>
+<text x="1530.0" y="337.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">Deux entrées, MMR A et MMR B</text>
+<rect x="1390.0" y="347.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="364.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Serre</text>
+<text x="1530.0" y="364.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">1 152 m², eau de retour TI</text>
+<rect x="1390.0" y="374.0" width="390.0" height="25.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="391.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Hauteur</text>
+<text x="1530.0" y="391.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">9 m, un seul étage</text>
+<rect x="1390.0" y="401.0" width="390.0" height="25.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1398.0" y="418.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Sécurité</text>
+<text x="1530.0" y="418.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">Clôture et accès propres au client</text>
+<rect x="1390.0" y="470.0" width="390.0" height="150.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="1390.0" y="470.0" width="390.0" height="30.0" rx="0" fill="#FEF100" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="1400.0" y="491.0" font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="900" fill="#1A1A1A" text-anchor="start">ORIO</text>
+<text x="1452.0" y="490.0" font-family="Roboto, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">Campus dédié 5 MW</text>
+<text x="1400.0" y="520.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start">Plan type et coupe A-A · concept</text>
+<text x="1400.0" y="540.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Projet</text>
+<text x="1500.0" y="540.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start">Saint-Césaire · 10 × 5 MW</text>
+<text x="1400.0" y="557.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Date</text>
+<text x="1500.0" y="557.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start">16 novembre 2026</text>
+<text x="1400.0" y="574.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Révision</text>
+<text x="1500.0" y="574.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start">A · préliminaire</text>
+<text x="1400.0" y="591.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Statut</text>
+<text x="1500.0" y="591.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start">Non pour construction</text></svg>

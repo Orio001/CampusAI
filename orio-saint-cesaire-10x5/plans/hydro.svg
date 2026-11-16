@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" width="1800" height="1000"><defs><marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1A1A1A"/></marker>
+<marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#D0453A"/></marker>
+<marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#3A7BD5"/></marker>
+<marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M2,8 L8,2" stroke="#1A1A1A" stroke-width="1.4"/></marker>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#B9B9B5" stroke-width="1.2"/></pattern>
+<pattern id="hatchG" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#9DBF86" stroke-width="1.6"/></pattern>
+<pattern id="hatchO" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#E9B47A" stroke-width="1.4"/></pattern>
+<pattern id="grid" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M6 0 L0 0 0 6" fill="none" stroke="#B8D4A6" stroke-width="0.8"/></pattern></defs><rect width="100%" height="100%" fill="#FFFFFF"/><text x="60.0" y="50.0" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="900" fill="#1A1A1A" text-anchor="start">SCHÉMA HYDRAULIQUE · REFROIDISSEMENT ET RÉCUPÉRATION DE CHALEUR (CAMPUS TYPE)</text>
+<text x="60.0" y="74.0" font-family="Roboto, Arial, sans-serif" font-size="13" font-weight="400" fill="#555555" text-anchor="start">Boucles fermées. Aucune tour de refroidissement, aucun refroidisseur à compresseur, aucune évaporation d’eau.</text>
+<rect x="40.0" y="100.0" width="420.0" height="560.0" rx="0" fill="#F4F6FA" stroke="#8C8C8C" stroke-width="1" stroke-dasharray="6 4" opacity="1"/>
+<text x="56.0" y="124.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#555555" text-anchor="start">SALLE TI</text>
+<rect x="480.0" y="100.0" width="300.0" height="560.0" rx="0" fill="#F4F6FA" stroke="#8C8C8C" stroke-width="1" stroke-dasharray="6 4" opacity="1"/>
+<text x="496.0" y="124.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#555555" text-anchor="start">SALLE MÉCANIQUE</text>
+<rect x="800.0" y="100.0" width="960.0" height="560.0" rx="0" fill="#F7F9F4" stroke="#8C8C8C" stroke-width="1" stroke-dasharray="6 4" opacity="1"/>
+<text x="816.0" y="124.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#555555" text-anchor="start">EXTÉRIEUR · COUR, SERRE, BOUCLE PARTAGÉE</text>
+<rect x="90.0" y="200.0" width="34.0" height="120.0" rx="2" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="96.0" y="210.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="96.0" y="228.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="96.0" y="246.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="96.0" y="264.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="96.0" y="282.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="96.0" y="300.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="136.0" y="200.0" width="34.0" height="120.0" rx="2" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="142.0" y="210.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="142.0" y="228.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="142.0" y="246.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="142.0" y="264.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="142.0" y="282.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="142.0" y="300.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="182.0" y="200.0" width="34.0" height="120.0" rx="2" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="188.0" y="210.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="188.0" y="228.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="188.0" y="246.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="188.0" y="264.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="188.0" y="282.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="188.0" y="300.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="228.0" y="200.0" width="34.0" height="120.0" rx="2" fill="#1D222A" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234.0" y="210.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234.0" y="228.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234.0" y="246.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234.0" y="264.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234.0" y="282.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="234.0" y="300.0" width="22.0" height="8.0" rx="0" fill="#3A4250" stroke="none" stroke-width="1" opacity="1"/>
+<text x="180.0" y="345.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">~25 baies, plaques froides</text>
+<text x="180.0" y="361.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="middle">plateforme 100 % liquide (NVIDIA Vera Rubin)</text>
+<polyline points="270.0,230.0 420.0,230.0 420.0,260.0 560.0,260.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<polyline points="560.0,300.0 360.0,300.0 360.0,290.0 270.0,290.0" fill="none" stroke="#3A7BD5" stroke-width="3.2" opacity="1" marker-end="url(#arrB)"/>
+<rect x="266.5" y="203.5" width="127.0" height="21.0" rx="2" fill="#D0453A" stroke="none" stroke-width="1" opacity="1"/>
+<text x="271.5" y="218.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="start">TCS · retour ~55 °C</text>
+<rect x="251.1" y="311.5" width="157.8" height="21.0" rx="2" fill="#3A7BD5" stroke="none" stroke-width="1" opacity="1"/>
+<text x="256.1" y="326.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="start">TCS · alimentation 45 °C</text>
+<text x="180.0" y="395.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="middle">TCS : eau + 25 % glycol propylénique</text>
+<text x="180.0" y="411.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="middle">(référence NVIDIA, refroidissement à 45 °C)</text>
+<rect x="560.0" y="230.0" width="160.0" height="100.0" rx="3" fill="#E6E8EB" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="640.0" y="276.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">CDU</text>
+<text x="640.0" y="293.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">échangeurs liquide-liquide</text>
+<text x="640.0" y="307.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">5 unités, N+1</text>
+<text x="640.0" y="321.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">approche ~3 K</text>
+<polyline points="720.0,260.0 900.0,260.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<polyline points="900.0,300.0 720.0,300.0" fill="none" stroke="#3A7BD5" stroke-width="3.2" opacity="1" marker-end="url(#arrB)"/>
+<rect x="774.2" y="233.5" width="71.6" height="21.0" rx="2" fill="#D0453A" stroke="none" stroke-width="1" opacity="1"/>
+<text x="779.2" y="248.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="start">FWS ~52 °C</text>
+<rect x="777.3" y="311.5" width="65.4" height="21.0" rx="2" fill="#3A7BD5" stroke="none" stroke-width="1" opacity="1"/>
+<text x="782.3" y="326.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="start">FWS 42 °C</text>
+<text x="640.0" y="370.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">Boucle installation (FWS)</text>
+<text x="640.0" y="386.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="middle">classe ASHRAE W45 (≤ 45 °C)</text>
+<rect x="900.0" y="220.0" width="170.0" height="110.0" rx="3" fill="#F6D9D5" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="985.0" y="271.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#8E2A22" text-anchor="middle">RÉCUPÉRATION</text>
+<text x="985.0" y="288.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">échangeur à plaques</text>
+<text x="985.0" y="302.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">priorité 1 : usages</text>
+<text x="985.0" y="316.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">avant rejet</text>
+<polyline points="1070.0,245.0 1180.0,245.0 1180.0,170.0 1260.0,170.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<polyline points="1260.0,205.0 1205.0,205.0 1205.0,270.0 1070.0,270.0" fill="none" stroke="#3A7BD5" stroke-width="3.2" opacity="1" marker-end="url(#arrB)"/>
+<rect x="1260.0" y="140.0" width="220.0" height="90.0" rx="3" fill="#E3EFD9" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="1370.0" y="181.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#2F5E1F" text-anchor="middle">SERRE DU CAMPUS</text>
+<text x="1370.0" y="198.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">1 152 m², rails basse température</text>
+<text x="1370.0" y="212.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">~0,29 MW en pointe (250 W/m²)</text>
+<rect x="1191.5" y="117.5" width="47.0" height="21.0" rx="2" fill="#D0453A" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1196.5" y="132.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="start">~48 °C</text>
+<polyline points="1070.0,300.0 1230.0,300.0 1230.0,330.0 1290.0,330.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<polyline points="1290.0,365.0 1180.0,365.0 1180.0,315.0 1070.0,315.0" fill="none" stroke="#3A7BD5" stroke-width="3.2" opacity="1" marker-end="url(#arrB)"/>
+<rect x="1290.0" y="300.0" width="200.0" height="100.0" rx="3" fill="#F6D9D5" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="1390.0" y="346.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#8E2A22" text-anchor="middle">BOUCLE PARTAGÉE</text>
+<text x="1390.0" y="363.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">vers le pôle chaleur :</text>
+<text x="1390.0" y="377.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">stockage thermique</text>
+<text x="1390.0" y="391.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">pompes à chaleur 65–75 °C</text>
+<polyline points="1490.0,330.0 1560.0,330.0 1560.0,200.0 1600.0,200.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<polyline points="1490.0,360.0 1590.0,360.0 1590.0,330.0 1600.0,330.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<rect x="1600.0" y="160.0" width="150.0" height="80.0" rx="3" fill="#E3EFD9" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="1675.0" y="196.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#2F5E1F" text-anchor="middle">Serres partagées</text>
+<text x="1675.0" y="213.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">1,35 ha sur le site</text>
+<text x="1675.0" y="227.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">+ parc voisin potentiel</text>
+<rect x="1600.0" y="290.0" width="150.0" height="80.0" rx="3" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="1675.0" y="326.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">Bâtiments</text>
+<text x="1675.0" y="343.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">réseau de chaleur</text>
+<text x="1675.0" y="357.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">à développer</text>
+<polyline points="985.0,330.0 985.0,470.0 1100.0,470.0" fill="none" stroke="#D0453A" stroke-width="3.2" opacity="1" marker-end="url(#arrR)"/>
+<polyline points="1100.0,520.0 950.0,520.0 950.0,330.0" fill="none" stroke="#3A7BD5" stroke-width="3.2" opacity="1" marker-end="url(#arrB)"/>
+<rect x="1100.0" y="430.0" width="330.0" height="130.0" rx="3" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="1265.0" y="491.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">REFROIDISSEURS SECS · 8 unités, N+1</text>
+<text x="1265.0" y="508.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">rejettent seulement le surplus de chaleur</text>
+<text x="1265.0" y="522.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">ventilateurs EC à vitesse variable, basse vitesse la nuit</text>
+<text x="1265.0" y="536.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">boucle extérieure glycolée (protection −30 °C)</text>
+<text x="1265.0" y="550.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">42 °C atteignable jusqu’à 35 °C d’air (approche 7 K)</text>
+<circle cx="1130.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1168.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1206.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1244.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1282.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1320.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1358.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<circle cx="1396.0" cy="590.0" r="13" fill="#2F343A" stroke="#8A9098" stroke-width="1"/>
+<text x="1265.0" y="625.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1F4E85" text-anchor="middle">Aucune évaporation · aucun compresseur · aucun réfrigérant</text>
+<text x="1000.0" y="410.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">priorité 2</text>
+<polygon points="978.0,395.0 992.0,395.0 985.0,407.0" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<rect x="480.0" y="450.0" width="300.0" height="110.0" rx="3" fill="#FFFFFF" stroke="#E08A2E" stroke-width="1.4" stroke-dasharray="5 3" opacity="1"/>
+<text x="630.0" y="474.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#8A5418" text-anchor="middle">ORC · VOLET RECHERCHE</text>
+<text x="630.0" y="494.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">Rendement 2 à 8 % modélisé, 1,9 à 3,3 %</text>
+<text x="630.0" y="509.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">mesuré en laboratoire (source 40–85 °C).</text>
+<text x="630.0" y="524.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">Étudié avec l’Université de Sherbrooke,</text>
+<text x="630.0" y="539.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#444444" text-anchor="middle">non compté dans le bilan.</text>
+<text x="60.0" y="700.0" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="900" fill="#1A1A1A" text-anchor="start">BILAN DE CHALEUR · 10 CAMPUS, 50 MW TI</text>
+<rect x="60.0" y="714.0" width="1700.0" height="30.0" rx="0" fill="#1A1A1A" stroke="none" stroke-width="1" opacity="1"/>
+<text x="70.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">Usage</text>
+<text x="530.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">Surface</text>
+<text x="830.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">Pointe hivernale</text>
+<text x="1120.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">Part de 50 MW</text>
+<text x="1410.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">Énergie annuelle</text>
+<rect x="60.0" y="744.0" width="1700.0" height="30.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="70.0" y="764.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Serres des 10 campus</text>
+<text x="530.0" y="764.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">1,15 ha</text>
+<text x="830.0" y="764.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~2,9 MW</text>
+<text x="1120.0" y="764.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~6 %</text>
+<text x="1410.0" y="764.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~3,7 GWh</text>
+<rect x="60.0" y="774.0" width="1700.0" height="30.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="70.0" y="794.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Serres partagées sur le site</text>
+<text x="530.0" y="794.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">1,35 ha</text>
+<text x="830.0" y="794.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~3,4 MW</text>
+<text x="1120.0" y="794.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~7 %</text>
+<text x="1410.0" y="794.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~4,3 GWh</text>
+<rect x="60.0" y="804.0" width="1700.0" height="30.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="70.0" y="824.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Parc de serres voisin (potentiel, type QScale)</text>
+<text x="530.0" y="824.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">12 ha</text>
+<text x="830.0" y="824.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~30 MW</text>
+<text x="1120.0" y="824.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~60 %</text>
+<text x="1410.0" y="824.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">~38 GWh</text>
+<rect x="60.0" y="834.0" width="1700.0" height="30.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="70.0" y="854.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Refroidisseurs secs (surplus, sans eau)</text>
+<text x="530.0" y="854.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start"></text>
+<text x="830.0" y="854.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start">le reste</text>
+<text x="1120.0" y="854.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start"></text>
+<text x="1410.0" y="854.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="400" fill="#1A1A1A" text-anchor="start"></text>
+<text x="60.0" y="885.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Hypothèses : besoin de pointe des serres ≈ 250 W/m² (mémoire UPA, Régie de l’énergie, dossier R-4127-2020) ; énergie annuelle ≈ 3,2 GWh/ha (secteur serricole québécois : 313 ha, ~1 TWh/an).</text>
+<text x="60.0" y="901.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Chaleur TI disponible : 50 MW en continu ≈ 438 GWh/an à pleine charge. La récupération est limitée par la demande locale, pas par la technique.</text></svg>

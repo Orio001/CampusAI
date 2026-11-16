@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orio · Saint-Césaire · 10 campus dédiés de 5 MW</title>
+<style>
+:root{--y:#FEF100;--ink:#1A1A1A;--card:#F2F2EF;--grey:#555}
+*{box-sizing:border-box}
+body{margin:0;font-family:Roboto,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+header{background:var(--y);padding:28px 5vw 22px}
+header h1{margin:0;font-size:clamp(24px,3.4vw,40px);letter-spacing:.01em;text-transform:uppercase}
+header p{margin:8px 0 0;font-size:17px}
+nav{position:sticky;top:0;z-index:5;background:var(--ink);display:flex;gap:2px;flex-wrap:wrap;padding:0 5vw}
+nav a{color:#fff;text-decoration:none;padding:12px 14px;font-size:14px;font-weight:700}
+nav a:hover{color:var(--y)}
+main{padding:0 5vw 60px}
+section{padding-top:36px}
+h2{font-size:22px;text-transform:uppercase;margin:0 0 6px}
+.lead{color:var(--grey);margin:0 0 16px;max-width:960px;line-height:1.45}
+.viewer{display:grid;grid-template-columns:1fr 320px;gap:16px}
+.frame{position:relative;height:min(68vh,720px);background:#e9eeea;border:1px solid #ddd}
+.frame iframe{width:100%;height:100%;border:0}
+.views{display:flex;gap:6px;margin:0 0 10px;flex-wrap:wrap}
+.views button{border:0;background:var(--card);padding:9px 14px;font-weight:700;cursor:pointer;font-size:14px}
+.views button.on{background:var(--ink);color:#fff}
+aside{background:var(--card);padding:16px 18px;font-size:14px}
+aside dl{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+aside dt{font-weight:700}aside dd{margin:0}
+.plan{border:1px solid #ddd;margin:0 0 8px;background:#fff}
+.plan img{width:100%;display:block}
+.cap{font-size:13px;color:var(--grey);margin:0 0 28px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;vertical-align:top}
+th{background:var(--ink);color:#fff}
+tr:nth-child(even) td{background:var(--card)}
+.src li{margin:0 0 6px;font-size:14px;line-height:1.4}
+.note{background:var(--ink);color:#fff;padding:14px 18px;font-size:15px}
+.note b{color:var(--y)}
+@media(max-width:900px){.viewer{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Des centres de données que les gens veulent vraiment</h1>
+  <p>Saint-Césaire · 10 campus dédiés de 5 MW TI (50 MW) · Tier III · une serre sur chaque campus · 100 % souverain</p>
+</header>
+<nav>
+  <a href="#modele">Modèle 3D</a><a href="#implantation">Implantation</a><a href="#campus">Campus 5 MW</a>
+  <a href="#electricite">Électricité</a><a href="#hydraulique">Refroidissement et chaleur</a><a href="#bruit">Bruit</a>
+  <a href="#hypotheses">Hypothèses et sources</a><a href="../">Autres campus</a>
+</nav>
+<main>
+<section id="modele">
+  <h2>Modèle 3D interactif</h2>
+  <p class="lead">Faites pivoter avec la souris, zoomez avec la molette. Même géométrie que les plans 2D ci-dessous. Concept préliminaire, non pour construction.</p>
+  <div class="views">
+    <button data-v="aerial" class="on">Vue d’ensemble</button>
+    <button data-v="plan">Vue en plan</button>
+    <button data-v="campus">Campus 5 MW en coupe</button>
+  </div>
+  <div class="viewer">
+    <div class="frame"><iframe id="m" src="model.html?view=aerial&interactive=1" title="Modèle 3D du campus"></iframe></div>
+    <aside>
+      <dl>
+        <dt>Lot</dt><dd>6 593 584, rue Larose, zone industrielle 409, 126 057 m²</dd>
+        <dt>Puissance TI</dt><dd>50 MW : 10 campus de 5 MW, un client par campus</dd>
+        <dt>Installation</dt><dd>≈ 57,5 MW à PUE 1,15</dd>
+        <dt>Raccordement</dt><dd>Poste Saint-Césaire d’Hydro-Québec (230-120-49-25 kV), de l’autre côté de la route 112 ; poste client 120/25 kV, 3 × 47 MVA (N+1), à confirmer par Hydro-Québec</dd>
+        <dt>Fiabilité</dt><dd>Conception visant Uptime Tier III (maintenabilité concurrente)</dd>
+        <dt>Refroidissement</dt><dd>Liquide direct 45 °C, refroidisseurs secs, aucune évaporation, aucun compresseur</dd>
+        <dt>Bruit</dt><dd>≤ 35 dBA la nuit visé à la première résidence (calcul préliminaire 31 à 34 dBA)</dd>
+        <dt>Chaleur</dt><dd>Serre de ~1 150 m² par campus, 1,35 ha de serres partagées, boucle vers un parc de serres voisin potentiel</dd>
+        <dt>Souveraineté</dt><dd>Propriété et exploitation québécoises</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section id="implantation">
+  <h2>Plan d’implantation</h2>
+  <p class="lead">Tout ce qui fait du bruit est au centre et au nord du site, derrière des écrans et une butte plantée. Tout ce que les voisins voient est vert : butte, bassin, serres. Accès par la future rue publique depuis la route 112, aucun camion sur la rue Larose.</p>
+  <div class="plan"><img src="plans/site_plan.svg" alt="Plan d’implantation coté du site"></div>
+  <p class="cap">Géométrie du lot simplifiée en rectangle équivalent (≈ 520 × 242 m). Implantation finale selon l’arpentage, les servitudes et les études.</p>
+</section>
+
+<section id="campus">
+  <h2>Campus dédié de 5 MW</h2>
+  <p class="lead">Chaque client reçoit sa propre parcelle clôturée : bâtiment d’un étage, cour technique, génératrices, transformateurs, deux entrées fibre et une serre. Rien n’est partagé entre clients en aval du poste 25 kV.</p>
+  <div class="plan"><img src="plans/campus_plan.svg" alt="Plan type et coupe d’un campus de 5 MW"></div>
+</section>
+
+<section id="electricite">
+  <h2>Schéma unifilaire</h2>
+  <div class="plan"><img src="plans/sld.svg" alt="Schéma unifilaire du site et d’un campus"></div>
+</section>
+
+<section id="hydraulique">
+  <h2>Refroidissement et récupération de chaleur</h2>
+  <div class="plan"><img src="plans/hydro.svg" alt="Schéma hydraulique et bilan de chaleur"></div>
+</section>
+
+<section id="bruit">
+  <h2>Bruit de nuit</h2>
+  <p class="lead">Calcul simplifié : divergence géométrique hémisphérique, 2 dB d’effet de sol, 12 dB d’écran pour les cours, butte non comptée. Puissance acoustique visée par campus la nuit : 90 dB(A). Poste client : 92 dB(A). Une étude ISO 9613-2 complète, avec mesure du bruit de fond, suivra.</p>
+  <div class="plan"><img src="plans/noise_map.svg" alt="Carte de bruit de nuit"></div>
+  <table>
+    <tr><th>Récepteur</th><th>Niveau calculé la nuit</th><th>Critère Québec (zone I, nuit)</th><th>Cible Orio</th></tr>
+    <tr><td>R1 · rue Larose (ouest)</td><td>≈ 32 dBA</td><td>40 dBA</td><td>≤ 35 dBA</td></tr>
+    <tr><td>R2 · rue Girard (nord-ouest)</td><td>≈ 34 dBA</td><td>40 dBA</td><td>≤ 35 dBA</td></tr>
+    <tr><td>R3 · rue Larose (sud-ouest)</td><td>≈ 31 dBA</td><td>40 dBA</td><td>≤ 35 dBA</td></tr>
+    <tr><td>R4 · route 112 (sud)</td><td>≈ 34 dBA</td><td>selon le zonage</td><td>≤ 35 dBA</td></tr>
+  </table>
+</section>
+
+<section id="hypotheses">
+  <h2>Hypothèses et sources</h2>
+  <ul class="src">
+    <li>Lot, zonage, accès, servitudes : rapport d’évaluation GRH (mai 2023) et certificat de localisation.</li>
+    <li>Poste Saint-Césaire à 230-120-49-25 kV : Hydro-Québec, Régie de l’énergie, dossier R-4258-2024 (pièce B-0004).</li>
+    <li>Autorisation des charges de 5 MW et plus par le MEIE ; tarif CD proposé (~13 ¢/kWh en moyenne), en examen à la Régie : dossier R-4333-2026.</li>
+    <li>Classes de refroidissement liquide W17 à W+ : ASHRAE TC 9.9.</li>
+    <li>Refroidissement à 45 °C sans refroidisseur à compresseur, TCS eau + 25 % de glycol propylénique : NVIDIA (plateforme Vera Rubin, CES 2026).</li>
+    <li>Cotes de génératrices admises en Tier III (continues, prime déclassée, ou sans limite d’heures) : Uptime Institute, Tier Standard: Topology.</li>
+    <li>Lissage de puissance par stockage dans les blocs d’alimentation GB300 NVL72 : NVIDIA Technical Blog.</li>
+    <li>Architecture 800 VCC prévue avec les systèmes Kyber en 2027 : NVIDIA Technical Blog.</li>
+    <li>Critères de bruit : Note d’instructions 98-01 (40 dBA la nuit en zone I), remplacée en janvier 2026 par les Lignes directrices relatives à la gestion du bruit environnemental ; critères applicables à confirmer.</li>
+    <li>Majoration des courbes IDF pour les changements climatiques : MELCCFP, fiche Gestion des eaux pluviales (novembre 2024).</li>
+    <li>Besoin de pointe des serres ≈ 250 W/m² : mémoire de l’UPA, Régie de l’énergie, dossier R-4127-2020. Secteur serricole : 313 ha, ~1 TWh de chaleur par an.</li>
+    <li>Parc de serres de 12 ha chauffé par les rejets de QScale à Lévis : gouvernement du Québec, programme Valorisation des rejets thermiques.</li>
+    <li>ORC sur rejets de 40 à 85 °C : rendement de 2 à 8 % modélisé, 1,9 à 3,3 % mesuré (Araya et al., Boise State).</li>
+  </ul>
+  <p class="note"><b>Statut :</b> concept préliminaire d’Orio, novembre 2026. Les valeurs de bruit, de chaleur et de pluie sont des estimations d’ingénierie à valider par les études de site. Non pour construction.</p>
+</section>
+</main>
+<script>
+document.querySelectorAll('.views button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.views button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.getElementById('m').src='model.html?view='+b.dataset.v+'&interactive=1';
+});
+</script>
+</body>
+</html>

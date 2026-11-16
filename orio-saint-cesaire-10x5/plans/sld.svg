@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" width="1800" height="1000"><defs><marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1A1A1A"/></marker>
+<marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#D0453A"/></marker>
+<marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#3A7BD5"/></marker>
+<marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M2,8 L8,2" stroke="#1A1A1A" stroke-width="1.4"/></marker>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#B9B9B5" stroke-width="1.2"/></pattern>
+<pattern id="hatchG" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#9DBF86" stroke-width="1.6"/></pattern>
+<pattern id="hatchO" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#E9B47A" stroke-width="1.4"/></pattern>
+<pattern id="grid" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M6 0 L0 0 0 6" fill="none" stroke="#B8D4A6" stroke-width="0.8"/></pattern></defs><rect width="100%" height="100%" fill="#FFFFFF"/><text x="60.0" y="50.0" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="900" fill="#1A1A1A" text-anchor="start">SCHÉMA UNIFILAIRE · SITE ET CAMPUS TYPE (TIER III)</text>
+<text x="60.0" y="74.0" font-family="Roboto, Arial, sans-serif" font-size="13" font-weight="400" fill="#555555" text-anchor="start">Simplifié. Chaque composant peut être retiré pour entretien sans arrêter les TI (maintenabilité concurrente, Uptime Institute Tier III).</text>
+<rect x="60.0" y="100.0" width="330.0" height="50.0" rx="0" fill="#F1E3D3" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="225.0" y="125.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#8A5418" text-anchor="middle">HYDRO-QUÉBEC · POSTE SAINT-CÉSAIRE</text>
+<text x="225.0" y="139.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">230-120-49-25 kV (existant)</text>
+<line x1="150.0" y1="150.0" x2="150.0" y2="215.0" stroke="#E08A2E" stroke-width="2.2" opacity="1"/>
+<rect x="144.0" y="179.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<text x="160.0" y="182.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A5418" text-anchor="start">Circuit 120 kV n° 1</text>
+<line x1="300.0" y1="150.0" x2="300.0" y2="215.0" stroke="#E08A2E" stroke-width="2.2" opacity="1"/>
+<rect x="294.0" y="179.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<text x="310.0" y="182.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A5418" text-anchor="start">Circuit 120 kV n° 2</text>
+<text x="400.0" y="190.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A5418" text-anchor="start" font-style="italic">2 circuits visés, à confirmer par l’étude d’intégration d’Hydro-Québec</text>
+<line x1="90.0" y1="215.0" x2="470.0" y2="215.0" stroke="#1A1A1A" stroke-width="5" opacity="1"/>
+<text x="480.0" y="219.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">Barre 120 kV · poste client</text>
+<line x1="130.0" y1="215.0" x2="130.0" y2="240.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="124.0" y="239.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="130.0" y1="251.0" x2="130.0" y2="268.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="130.0" cy="277.2" r="13" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="130.0" cy="292.8" r="13" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="149.0" y="283.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">T1 · 47 MVA</text>
+<text x="149.0" y="298.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">120/25 kV</text>
+<line x1="130.0" y1="307.0" x2="130.0" y2="335.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="124.0" y="324.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="245.0" y1="215.0" x2="245.0" y2="240.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="239.0" y="239.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="245.0" y1="251.0" x2="245.0" y2="268.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="245.0" cy="277.2" r="13" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="245.0" cy="292.8" r="13" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="264.0" y="283.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">T2 · 47 MVA</text>
+<text x="264.0" y="298.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">120/25 kV</text>
+<line x1="245.0" y1="307.0" x2="245.0" y2="335.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="239.0" y="324.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="360.0" y1="215.0" x2="360.0" y2="240.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="354.0" y="239.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="360.0" y1="251.0" x2="360.0" y2="268.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="360.0" cy="277.2" r="13" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="360.0" cy="292.8" r="13" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="379.0" y="283.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">T3 · 47 MVA</text>
+<text x="379.0" y="298.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">120/25 kV</text>
+<line x1="360.0" y1="307.0" x2="360.0" y2="335.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="354.0" y="324.0" width="12.0" height="12.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<text x="470.0" y="290.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">N+1 : deux transformateurs suffisent à 57,5 MW (PUE 1,15)</text>
+<line x1="90.0" y1="350.0" x2="280.0" y2="350.0" stroke="#FEF100" stroke-width="7" opacity="1"/>
+<line x1="90.0" y1="350.0" x2="280.0" y2="350.0" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<line x1="320.0" y1="350.0" x2="510.0" y2="350.0" stroke="#E08A2E" stroke-width="7" opacity="1"/>
+<line x1="320.0" y1="350.0" x2="510.0" y2="350.0" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<line x1="130.0" y1="335.0" x2="130.0" y2="350.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="360.0" y1="335.0" x2="360.0" y2="350.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="245.0" y1="335.0" x2="245.0" y2="342.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="245.0" y1="342.0" x2="330.0" y2="342.0" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="3 2" opacity="1"/>
+<line x1="270.0" y1="342.0" x2="270.0" y2="350.0" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="3 2" opacity="1"/>
+<line x1="330.0" y1="342.0" x2="330.0" y2="350.0" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="3 2" opacity="1"/>
+<text x="300.0" y="372.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#1A1A1A" text-anchor="middle">T2 en secours de la barre 1 ou 2</text>
+<text x="85.0" y="354.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="end">Barre 25 kV · 1</text>
+<text x="520.0" y="354.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="start">Barre 25 kV · 2</text>
+<line x1="100.0" y1="350.0" x2="100.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="96.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="330.0" y1="350.0" x2="330.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="326.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="117.0" y1="350.0" x2="117.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="113.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="347.0" y1="350.0" x2="347.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="343.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="134.0" y1="350.0" x2="134.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="130.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="364.0" y1="350.0" x2="364.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="360.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="151.0" y1="350.0" x2="151.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="147.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="381.0" y1="350.0" x2="381.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="377.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="168.0" y1="350.0" x2="168.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="164.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="398.0" y1="350.0" x2="398.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="394.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="185.0" y1="350.0" x2="185.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="181.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="415.0" y1="350.0" x2="415.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="411.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="202.0" y1="350.0" x2="202.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="198.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="432.0" y1="350.0" x2="432.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="428.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="219.0" y1="350.0" x2="219.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="215.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="449.0" y1="350.0" x2="449.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="445.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="236.0" y1="350.0" x2="236.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="232.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="466.0" y1="350.0" x2="466.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="462.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="253.0" y1="350.0" x2="253.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="249.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="483.0" y1="350.0" x2="483.0" y2="395.0" stroke="#1A1A1A" stroke-width="1.2" opacity="1"/>
+<rect x="479.0" y="376.0" width="8.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<text x="185.0" y="412.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">10 départs A (C1…C10)</text>
+<text x="415.0" y="412.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">10 départs B (C1…C10)</text>
+<text x="640.0" y="380.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="start">Départs supplémentaires : pôle chaleur, serres, exploitation</text>
+<rect x="40.0" y="450.0" width="1300.0" height="520.0" rx="0" fill="#FAFAF8" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="8 4" opacity="1"/>
+<rect x="52.0" y="441.0" width="251.9" height="22.0" rx="2" fill="#1A1A1A" stroke="none" stroke-width="1" opacity="1"/>
+<text x="57.0" y="456.3" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start">CAMPUS Cn · 5 MW TI (identique × 10)</text>
+<line x1="100.0" y1="395.0" x2="100.0" y2="470.0" stroke="#1A1A1A" stroke-width="1.6" stroke-dasharray="5 3" opacity="1"/>
+<line x1="330.0" y1="395.0" x2="330.0" y2="470.0" stroke="#1A1A1A" stroke-width="1.6" stroke-dasharray="5 3" opacity="1"/>
+<line x1="100.0" y1="470.0" x2="200.0" y2="470.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="330.0" y1="470.0" x2="560.0" y2="470.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="200.0" y1="470.0" x2="200.0" y2="495.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="155.0" y="495.0" width="90.0" height="28.0" rx="0" fill="#FFF9B8" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="200.0" y="513.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">Interrupteur MT A</text>
+<line x1="200.0" y1="523.0" x2="145.0" y2="540.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="140.0" y="540.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="145.0" cy="565.4" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="145.0" cy="578.6" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="162.0" y="570.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">A1</text>
+<text x="162.0" y="585.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">3,5 MVA 25/0,6 kV</text>
+<line x1="145.0" y1="590.0" x2="145.0" y2="625.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="140.0" y="613.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="200.0" y1="523.0" x2="255.0" y2="540.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="250.0" y="540.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="255.0" cy="565.4" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="255.0" cy="578.6" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="272.0" y="570.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">A2</text>
+<text x="272.0" y="585.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">3,5 MVA 25/0,6 kV</text>
+<line x1="255.0" y1="590.0" x2="255.0" y2="625.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="250.0" y="613.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="90.0" y1="630.0" x2="310.0" y2="630.0" stroke="#FFF9B8" stroke-width="7" opacity="1"/>
+<line x1="90.0" y1="630.0" x2="310.0" y2="630.0" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="88.0" y="652.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="end">TGBT A · 600 V</text>
+<line x1="160.0" y1="630.0" x2="160.0" y2="700.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="155.0" y="657.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="110.0" y="700.0" width="100.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="160.0" y="720.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">UPS A</text>
+<text x="160.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">Li-ion, modules N+1</text>
+<line x1="160.0" y1="740.0" x2="160.0" y2="775.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="110.0" y="775.0" width="100.0" height="36.0" rx="0" fill="#FFF9B8" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="160.0" y="793.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Busway A</text>
+<text x="160.0" y="807.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">415/240 V</text>
+<line x1="260.0" y1="630.0" x2="260.0" y2="700.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="255.0" y="657.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="220.0" y="700.0" width="90.0" height="40.0" rx="0" fill="#EEF4FA" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="265.0" y="720.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Méca.</text>
+<text x="265.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">CDU, pompes</text>
+<line x1="560.0" y1="470.0" x2="560.0" y2="495.0" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="515.0" y="495.0" width="90.0" height="28.0" rx="0" fill="#FFE7C2" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="560.0" y="513.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="middle">Interrupteur MT B</text>
+<line x1="560.0" y1="523.0" x2="505.0" y2="540.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="500.0" y="540.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="505.0" cy="565.4" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="505.0" cy="578.6" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="522.0" y="570.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">B1</text>
+<text x="522.0" y="585.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">3,5 MVA 25/0,6 kV</text>
+<line x1="505.0" y1="590.0" x2="505.0" y2="625.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="500.0" y="613.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="560.0" y1="523.0" x2="615.0" y2="540.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="610.0" y="540.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="615.0" cy="565.4" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<circle cx="615.0" cy="578.6" r="11" fill="none" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="632.0" y="570.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="start">B2</text>
+<text x="632.0" y="585.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">3,5 MVA 25/0,6 kV</text>
+<line x1="615.0" y1="590.0" x2="615.0" y2="625.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="610.0" y="613.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="450.0" y1="630.0" x2="670.0" y2="630.0" stroke="#FFE7C2" stroke-width="7" opacity="1"/>
+<line x1="450.0" y1="630.0" x2="670.0" y2="630.0" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="448.0" y="652.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="end">TGBT B · 600 V</text>
+<line x1="520.0" y1="630.0" x2="520.0" y2="700.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="515.0" y="657.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="470.0" y="700.0" width="100.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="520.0" y="720.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle">UPS B</text>
+<text x="520.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">Li-ion, modules N+1</text>
+<line x1="520.0" y1="740.0" x2="520.0" y2="775.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="470.0" y="775.0" width="100.0" height="36.0" rx="0" fill="#FFE7C2" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="520.0" y="793.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Busway B</text>
+<text x="520.0" y="807.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">415/240 V</text>
+<line x1="620.0" y1="630.0" x2="620.0" y2="700.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="615.0" y="657.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<rect x="580.0" y="700.0" width="90.0" height="40.0" rx="0" fill="#EEF4FA" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="625.0" y="720.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Méca.</text>
+<text x="625.0" y="734.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">CDU, pompes</text>
+<rect x="250.0" y="870.0" width="270.0" height="56.0" rx="0" fill="#1D222A" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="385.0" y="902.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">~25 baies NVL72 · alimentation double A + B</text>
+<text x="385.0" y="942.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="middle">Blocs d’alimentation avec stockage (lissage des pointes de calcul)</text>
+<line x1="160.0" y1="811.0" x2="160.0" y2="840.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<line x1="160.0" y1="840.0" x2="330.0" y2="840.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<line x1="330.0" y1="840.0" x2="330.0" y2="870.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<line x1="520.0" y1="811.0" x2="520.0" y2="840.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<line x1="520.0" y1="840.0" x2="440.0" y2="840.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<line x1="440.0" y1="840.0" x2="440.0" y2="870.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<circle cx="800.0" cy="520.0" r="16" fill="#E9EEE5" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="800.0" y="525.0" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="900" fill="#1A1A1A" text-anchor="middle">G</text>
+<text x="820.0" y="510.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">G1</text>
+<line x1="800.0" y1="536.0" x2="800.0" y2="575.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="795.0" y="555.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="520.0" r="16" fill="#E9EEE5" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="880.0" y="525.0" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="900" fill="#1A1A1A" text-anchor="middle">G</text>
+<text x="900.0" y="510.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">G2</text>
+<line x1="880.0" y1="536.0" x2="880.0" y2="575.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="875.0" y="555.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="960.0" cy="520.0" r="16" fill="#E9EEE5" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="960.0" y="525.0" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="900" fill="#1A1A1A" text-anchor="middle">G</text>
+<text x="980.0" y="510.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">G3</text>
+<line x1="960.0" y1="536.0" x2="960.0" y2="575.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="955.0" y="555.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<circle cx="1040.0" cy="520.0" r="16" fill="#E9EEE5" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="1040.0" y="525.0" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="900" fill="#1A1A1A" text-anchor="middle">G</text>
+<text x="1060.0" y="510.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">G4</text>
+<line x1="1040.0" y1="536.0" x2="1040.0" y2="575.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="1035.0" y="555.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<text x="920.0" y="488.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">4 × 2 MWe, régime continu (DCC), N+1 · HVO</text>
+<line x1="770.0" y1="575.0" x2="1070.0" y2="575.0" stroke="#5B6B58" stroke-width="7" opacity="1"/>
+<line x1="770.0" y1="575.0" x2="1070.0" y2="575.0" stroke="#1A1A1A" stroke-width="1" opacity="1"/>
+<text x="1080.0" y="579.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="start">Barre de parallélisme 600 V</text>
+<line x1="790.0" y1="575.0" x2="790.0" y2="610.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="785.0" y="590.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="790.0" y1="610.0" x2="310.0" y2="610.0" stroke="#1A1A1A" stroke-width="1.4" stroke-dasharray="6 3" opacity="1"/>
+<line x1="310.0" y1="610.0" x2="310.0" y2="630.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<line x1="1050.0" y1="575.0" x2="1050.0" y2="600.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<rect x="1045.0" y="585.0" width="10.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6" opacity="1"/>
+<line x1="1050.0" y1="600.0" x2="670.0" y2="600.0" stroke="#1A1A1A" stroke-width="1.4" stroke-dasharray="6 3" opacity="1"/>
+<line x1="670.0" y1="600.0" x2="670.0" y2="630.0" stroke="#1A1A1A" stroke-width="1.4" opacity="1"/>
+<text x="800.0" y="625.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">Disjoncteurs de transfert vers TGBT A et TGBT B</text>
+<text x="800.0" y="640.0" font-family="Roboto, Arial, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="start">Mécanique sur UPS : refroidissement continu</text>
+<rect x="760.0" y="690.0" width="180.0" height="44.0" rx="0" fill="#EEF0EA" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="850.0" y="712.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Réservoirs double paroi</text>
+<text x="850.0" y="726.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">≥ 12 h à pleine charge</text>
+<rect x="960.0" y="690.0" width="180.0" height="44.0" rx="0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.3" opacity="1"/>
+<text x="1050.0" y="712.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle">Refroidisseurs secs</text>
+<text x="1050.0" y="726.0" font-family="Roboto, Arial, sans-serif" font-size="9" font-weight="400" fill="#555555" text-anchor="middle">alimentés par A ou B (ATS)</text>
+<text x="1370.0" y="120.0" font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="900" fill="#1A1A1A" text-anchor="start">CHOIX DE CONCEPTION</text>
+<rect x="1370.0" y="146.0" width="410.0" height="112.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1380.0" y="166.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">Source primaire</text>
+<text x="1380.0" y="186.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">Selon Uptime, la génératrice est la source fiable ;</text>
+<text x="1380.0" y="202.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">seules les cotes continues ou sans limite d’heures sont</text>
+<text x="1380.0" y="218.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">admises en Tier III.</text>
+<rect x="1370.0" y="268.0" width="410.0" height="112.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1380.0" y="288.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">Deux voies</text>
+<text x="1380.0" y="308.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">Voies A et B physiquement séparées, salles distinctes,</text>
+<text x="1380.0" y="324.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">mur coupe-feu ; baies alimentées par les deux voies.</text>
+<rect x="1370.0" y="390.0" width="410.0" height="112.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1380.0" y="410.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">Réseau</text>
+<text x="1380.0" y="430.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">Trois transformateurs 47 MVA en N+1 au poste client, deux</text>
+<text x="1380.0" y="446.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">barres 25 kV couplables.</text>
+<rect x="1370.0" y="512.0" width="410.0" height="112.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1380.0" y="532.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">Charges IA</text>
+<text x="1380.0" y="552.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">Les à-coups des entraînements synchrones sont lissés par</text>
+<text x="1380.0" y="568.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">le stockage des blocs d’alimentation (GB300) et par les</text>
+<text x="1380.0" y="584.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">UPS.</text>
+<rect x="1370.0" y="634.0" width="410.0" height="112.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1380.0" y="654.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">Évolution</text>
+<text x="1380.0" y="674.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">Salles électriques dimensionnées pour une distribution</text>
+<text x="1380.0" y="690.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">800 VCC (architecture annoncée par NVIDIA pour 2027).</text>
+<rect x="1370.0" y="756.0" width="410.0" height="112.0" rx="0" fill="#F2F2EF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1380.0" y="776.0" font-family="Roboto, Arial, sans-serif" font-size="12" font-weight="900" fill="#1A1A1A" text-anchor="start">Huiles</text>
+<text x="1380.0" y="796.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">Transformateurs à ester naturel : biodégradable, point de</text>
+<text x="1380.0" y="812.0" font-family="Roboto, Arial, sans-serif" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start">feu élevé.</text></svg>
