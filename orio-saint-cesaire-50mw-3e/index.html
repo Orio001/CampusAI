@@ -190,7 +190,7 @@ nav button:disabled{opacity:.35;cursor:not-allowed}
           <dt>Niveaux</dt><dd>3 · ~16,7 MW chacun</dd>
           <dt>Hauteur</dt><dd>~21 m</dd>
           <dt>Emprise au sol</dt><dd>4 400 m²</dd>
-          <dt>Exploitation</dt><dd>40 × 24 m · 2 étages</dd>
+          <dt>Accueil · NOC · bureaux</dt><dd>Noyau ouest</dd>
           <dt>Raccordement</dt><dd>120 kV</dd>
           <dt>Poste client</dt><dd>3 × 47 MVA (N+1)</dd>
           <dt>Génératrices</dt><dd>20 × 3,2 MW (N+1)</dd>
@@ -204,6 +204,8 @@ nav button:disabled{opacity:.35;cursor:not-allowed}
         <h2>Accès et stationnement</h2>
         <dl>
           <dt>Accès</dt><dd>Rue projetée → 112</dd>
+          <dt>Stationnement</dt><dd>À l’ouest du bâtiment</dd>
+          <dt>Marche jusqu’à l’entrée</dt><dd>~50 m</dd>
           <dt>Cases automobiles</dt><dd>60</dd>
           <dt>dont PMR / bornes VE</dt><dd>3 / 6</dd>
           <dt>Vélos</dt><dd>10</dd>
@@ -1290,9 +1292,10 @@ const G={
   bldg:{x0:125,x1:225,z0:-20,z1:24,h:21,lv:3},        // bâtiment TI 100 × 44 m, 3 étages
   yard:{x0:118,x1:232,z0:-80,z1:-28},                 // cour technique au nord
   sub:{x0:160,x1:236,z0:64,z1:112},                   // poste client 120/25 kV
-  ops:{x0:-130,x1:-90,z0:6,z1:30,h:8},                // exploitation, accueil, NOC
-  park:{x0:-135,x1:-96,rows:[[58,63.5],[70.5,76],[76,81.5],[88.5,94]],aisles:[[63.5,70.5],[81.5,88.5]],cx0:-96,cx1:-89,stall:2.6},
-  snow:{x0:-70,x1:-30,z0:62,z1:100},
+  core:{x0:125,x1:137},                               // noyau ouest : accueil, NOC, bureaux, escaliers
+  park:{x0:30,x1:69,rows:[[-26,-20.5],[-13.5,-8],[-8,-2.5],[4.5,10]],cx0:69,cx1:76,stall:2.6},   // à l'ouest du bâtiment, hors clôture
+  walk:{z:2,w:3},
+  snow:{x0:-12,x1:22,z0:-26,z1:10},
   ret:{x0:-10,x1:70,z0:64,z1:110},
   fence:{x0:88,x1:248,z0:-104,z1:118},
   gate:{x:88},
@@ -1408,7 +1411,6 @@ plane(site,(rg.e+rg.w)/2,rg.n,rg.e-rg.w+rg.wd,rg.wd,mat.asph,-0.25);
 plane(site,rg.w,(rg.n+mz)/2,rg.wd,mz-rg.n,mat.asph,-0.25);
 plane(site,(G.bldg.x0+G.bldg.x1)/2,(G.bldg.z1+mz)/2,G.bldg.x1-G.bldg.x0,mz-G.bldg.z1,mat.asph2,-0.24);   // parvis / aire de manoeuvre
 plane(site,(G.bldg.x0+G.bldg.x1)/2,(G.bldg.z0+G.yard.z1)/2,G.yard.x1-G.yard.x0,G.yard.z1-G.bldg.z0,mat.asph2,-0.24);
-plane(site,(G.ops.x0+G.ops.x1)/2,(G.ops.z1+mz)/2,G.ops.x1-G.ops.x0,mz-G.ops.z1,mat.asph2,-0.24);
 // résidences ouest et nord-ouest
 plane(village,-335,0,8,360,mat.asph,-0.27);plane(village,-280,-140,240,8,mat.asph,-0.27);
 {const H=[],Rf=[];const add=(x,z)=>{H.push([x,-0.3,z,11,5.5,9]);Rf.push([x,5.2,z,12,1.6,10]);};
@@ -1484,18 +1486,19 @@ inst(site,GENS,mat.gen);inst(site,TRAF,mat.trafo);
 inst(site,[[(Y.x0+Y.x1)/2,-0.3,Y.z0-0.3,Y.x1-Y.x0+1,6.5,0.5],[Y.x0-0.5,-0.3,(Y.z0+Y.z1)/2,0.5,6.5,Y.z1-Y.z0],[Y.x1+0.5,-0.3,(Y.z0+Y.z1)/2,0.5,6.5,Y.z1-Y.z0]],mat.vegScreen);
 pipe(site,[B.x0+40,0.8,B.z0],[B.x0+40,0.8,Y.z1-20],0.4,mat.hot);pipe(site,[B.x0+42,0.8,B.z0],[B.x0+42,0.8,Y.z1-20],0.4,mat.cold);
 
-// exploitation / accueil / NOC (2 étages)
-{const o=G.ops;box(site,(o.x0+o.x1)/2,-0.3,(o.z0+o.z1)/2,o.x1-o.x0,o.h,o.z1-o.z0,mat.bldg);box(site,(o.x0+o.x1)/2,o.h-0.3,(o.z0+o.z1)/2,o.x1-o.x0+0.4,0.4,o.z1-o.z0+0.4,mat.greenRoof);
- box(site,(o.x0+o.x1)/2,0.8,o.z1+0.05,o.x1-o.x0-6,5.5,0.1,mat.glass,false);
- box(site,o.x1+8,-0.3,o.z1-4,10,2.6,4,mat.fin);  // abri vélos
- box(site,o.x0-5,-0.3,o.z0+4,3,1.8,6,mat.bldgDark);} // conteneurs à déchets
+// entrée : sas vitré au noyau ouest (accueil, NOC, bureaux), allée piétonne, vélos, conteneurs
+{const w=G.walk;box(shellG,B.x0-3,-0.3,w.z,6,4.5,10,mat.glass,false);box(shellG,B.x0-3,4.2,w.z,6.6,0.4,10.6,mat.band,false);
+ plane(site,(G.park.cx1+B.x0-6)/2,w.z,B.x0-6-G.park.cx1,w.w,mat.pad,-0.21);
+ box(site,G.fence.x0,-0.3,w.z,1.2,2.2,3,mat.bldgDark);
+ box(site,82,-0.3,w.z-7,10,2.6,4,mat.fin);
+ box(site,G.dock.x1+6,-0.3,B.z1+4,3,1.8,6,mat.bldgDark);}
 // stationnement : 60 cases (3 PMR, 6 bornes VE)
 {const P=G.park,stl=[],cars=[[],[],[]];let n=0;
  rect(parkG,{x0:P.x0,x1:P.cx1,z0:P.rows[0][0],z1:P.rows[P.rows.length-1][1]},mat.asph,-0.24);
- plane(parkG,(P.cx0+P.cx1)/2,(mz+P.rows[0][0])/2,P.cx1-P.cx0,P.rows[0][0]-mz,mat.asph,-0.24);
+ {const zt=P.rows[P.rows.length-1][1];plane(parkG,(P.cx0+P.cx1)/2,(mz+zt)/2,P.cx1-P.cx0,mz-zt,mat.asph,-0.24);}
  P.rows.forEach((r,ri)=>{const k=Math.round((P.x1-P.x0)/P.stall);for(let i=0;i<=k;i++)stl.push([P.x0+i*P.stall,-0.23,(r[0]+r[1])/2,0.12,0.02,r[1]-r[0]]);
    for(let i=0;i<k;i++){n++;const x=P.x0+P.stall/2+i*P.stall,z=(r[0]+r[1])/2;
-     if(ri===0&&i>=k-3)plane(parkG,x,z,P.stall-0.3,r[1]-r[0]-0.4,mat.pmr,-0.225);
+     if(ri===2&&i>=k-3)plane(parkG,x,z,P.stall-0.3,r[1]-r[0]-0.4,mat.pmr,-0.225);
      else if(ri===1&&i>=k-6)plane(parkG,x,z,P.stall-0.3,r[1]-r[0]-0.4,mat.ev,-0.225);
      if(rnd()<.72)cars[Math.floor(rnd()*3)].push([x,-0.3,z,1.85,1.45,4.4]);}});
  inst(parkG,stl,mat.paint,false);inst(parkG,cars[0],mat.car);inst(parkG,cars[1],mat.car2);inst(parkG,cars[2],mat.car3);
@@ -1503,7 +1506,7 @@ pipe(site,[B.x0+40,0.8,B.z0],[B.x0+40,0.8,Y.z1-20],0.4,mat.hot);pipe(site,[B.x0+
 // rétention souterraine (contour), clôture sécurisée, guérite
 {const r=G.ret;plane(site,(r.x0+r.x1)/2,(r.z0+r.z1)/2,r.x1-r.x0,r.z1-r.z0,mat.ret,-0.2);dashed(site,[[r.x0,r.z0],[r.x1,r.z0],[r.x1,r.z1],[r.x0,r.z1],[r.x0,r.z0]],lineMat.ret,0.1);
  const f=G.fence,fl=[];const seg=(x0,z0,x1,z1)=>fl.push([(x0+x1)/2,-0.3,(z0+z1)/2,Math.max(0.06,Math.abs(x1-x0)),2.4,Math.max(0.06,Math.abs(z1-z0))]);
- seg(f.x0,f.z0,f.x1,f.z0);seg(f.x1,f.z0,f.x1,f.z1);seg(f.x0,f.z1,f.x1,f.z1);seg(f.x0,f.z0,f.x0,mz-6);seg(f.x0,mz+6,f.x0,f.z1);inst(site,fl,mat.fence,false);
+ seg(f.x0,f.z0,f.x1,f.z0);seg(f.x1,f.z0,f.x1,f.z1);seg(f.x0,f.z1,f.x1,f.z1);seg(f.x0,f.z0,f.x0,G.walk.z-1.5);seg(f.x0,G.walk.z+1.5,f.x0,mz-6);seg(f.x0,mz+6,f.x0,f.z1);inst(site,fl,mat.fence,false);
  box(site,f.x0-6,-0.3,mz-9,6,3.2,4,mat.bldgDark);box(site,f.x0-6,2.9,mz-9,7,0.3,5,mat.roof);
  box(site,f.x0,0.8,mz-2.2,0.25,0.25,4.2,mat.stripe,false);box(site,f.x0,0.8,mz+2.2,0.25,0.25,4.2,mat.stripe,false);}
 // panneau d'entrée
@@ -1522,7 +1525,7 @@ const VIEWS={
  plan:{n:'Plan d’implantation',c:'Nord du plan en haut · route 112 au sud · bâtiment et cour technique à l’est',ortho:true,tgt:[0,0,60]},
  cote:{n:'Plan coté',c:'Implantation, accès et stationnement · à l’échelle',svg:true},
  batiment:{n:'Bâtiment TI ouvert',c:'Vue éclatée des 3 niveaux d’environ 16,7 MW · salles électriques A / B · CDU · refroidissement liquide',pos:[70,80,125],tgt:[172,18,-2],fov:34,open:true},
- acces:{n:'Accès et stationnement',c:'Rue projetée depuis la route 112 · stationnement de 60 cases près de l’entrée',pos:[-300,62,300],tgt:[-130,0,70],fov:36},
+ acces:{n:'Accès et stationnement',c:'Rue projetée depuis la route 112 · 60 cases à l’ouest du bâtiment · guérite pour les camions',pos:[-60,60,175],tgt:[70,0,0],fov:40},
  voisin:{n:'Vue d’une maison, rue Larose',c:'Œil à 1,7 m, à ~45 m de la butte · décochez la butte ou les conifères pour comparer',pos:[-297,1.7,4],tgt:[-100,8,-10],fov:55,eye:true}
 };
 function resize(){if(!renderer)return;const w=W(),h=Hh();renderer.setSize(w,h,false);persp.aspect=w/h;persp.updateProjectionMatrix();
@@ -1555,21 +1558,21 @@ const vis=g=>()=>R[g]&&R[g].visible;
 const LABELS={
  site:[T('Résidences existantes','Rues Larose, Ostiguy, Girard',[-330,6,60]),T('Butte 5 m + conifères','Trois rangées, essences indigènes',[-150,14,-117],'veg',()=>R.vegG.visible||R.bermG.visible),
   T('Bâtiment TI · 50 MW','100 × 44 m · 3 étages · ~21 m',[175,23,2]),T('Cour technique','Génératrices N+1, refroidisseurs secs',[175,7,-60]),
-  T('Exploitation · accueil','2 étages, toit végétalisé',[-110,9,18]),T('Stationnement','60 cases',[-115,1,76]),
+  T('Entrée · accueil · NOC','Noyau ouest du bâtiment',[122,8,2]),T('Stationnement','60 cases',[50,1,-8]),
   T('Poste client 120/25 kV','3 × 47 MVA (N+1)',[198,13,88]),T('Poste Saint-Césaire','Hydro-Québec',[130,12,RZ+62],'hq',vis('hqG')),
   T('Servitude Hydro-Québec','Lignes existantes',[-206,28,-65],'hq',vis('hqG')),
   T('Rue projetée (Ville)','Raccord à la route 112',[G.xe-20,1,175]),T('Route 112','',[60,0,RZ])],
  plan:[T('Bâtiment TI','100 × 44 m · 3 étages',[175,22,2]),T('Cour technique','',[175,7,-55]),T('Poste client','120/25 kV',[198,8,88]),
-  T('Exploitation','',[-110,9,18]),T('P · 60 cases','',[-115,1,76]),T('Neige','',[-50,1,81]),T('Rétention souterraine','',[30,1,87],'cold'),
-  T('Guérite','',[G.gate.x-6,4,mz-9]),T('Butte + conifères','',[-254,10,-80],'veg'),T('Rue projetée','',[G.xe-22,0,180]),T('Route 112','',[40,0,RZ])],
+  T('Accueil · NOC','',[131,22,2]),T('P · 60 cases','',[50,1,-8]),T('Neige','',[5,1,-8]),T('Rétention souterraine','',[30,1,87],'cold'),
+  T('Guérite · camions','',[G.gate.x-6,4,mz-9]),T('Butte + conifères','',[-254,10,-80],'veg'),T('Rue projetée','',[G.xe-22,0,180]),T('Route 112','',[40,0,RZ])],
  batiment:[T('Salles TI · 3 niveaux (vue éclatée)','~84 baies par niveau, liquide direct',[175,36,-6],'',()=>R.cutG.visible),T('Salles électriques A / B','Par niveau, mur coupe-feu',[134,38,-12],'',()=>R.cutG.visible),
   T('CDU N+1','Échangeurs, côté cour',[160,36,-17],'cold',()=>R.cutG.visible),T('Quais de livraison','2 portes, camion SU-9',[204,5,30]),
   T('Cour technique','20 génératrices, 80 refroidisseurs secs',[175,7,-62]),T('Écran végétalisé 6,5 m','Trois côtés',[233,7,-78],'veg')],
  acces:[T('Route 112','',[-260,0,RZ]),T('Rue projetée (Ville)','Géométrie ARPO, chaussée ≈ 12 m',[G.xe-25,1,180]),T('Limite du lot','',[G.xe+25,1,L.z1]),
-  T('Stationnement · 60 cases','3 PMR, 6 bornes VE',[-115,2,76]),T('Exploitation · accueil','',[-110,9,18]),T('Dépôt de neige','',[-50,1,81]),
-  T('Guérite et barrière','Aucune attente sur la voie publique',[G.gate.x-6,4,mz-9])],
+  T('Stationnement · 60 cases','3 PMR, 6 bornes VE',[50,2,-8]),T('Entrée piétonne','Contrôle d’accès, accueil au noyau ouest',[110,4,2]),T('Dépôt de neige','',[5,1,-8]),
+  T('Guérite · camions','Aucune attente sur la voie publique',[G.gate.x-6,4,mz-9])],
  voisin:[T('Butte 5 m + trois rangées de conifères','À ~45 m de la maison',[-254,8,45],'veg',()=>R.vegG.visible||R.bermG.visible),
-  T('Bâtiment TI · 21 m','À ~420 m, derrière la butte',[175,22,2]),T('Exploitation · 8 m','Derrière la butte',[-110,10,18])]
+  T('Bâtiment TI · 21 m','À ~420 m, derrière la butte',[175,22,2])]
 };
 const lab=O('labels');let tags=[];
 function buildTags(){lab.innerHTML='';if(!renderer||VIEWS[VIEW].svg){tags=[];return;}tags=(LABELS[VIEW]||[]).map(Lb=>{const d=document.createElement('div');d.className='tag'+(Lb.c?' '+Lb.c:'');
@@ -1596,7 +1599,7 @@ function svgPlan(){
     let ang=Math.atan2(dy,dx)*180/Math.PI;if(ang>90)ang-=180;if(ang<=-90)ang+=180;
     const mx=(a[0]+b[0])/2+nx*Math.sign(off)*1.6,my=(a[1]+b[1])/2+ny*Math.sign(off)*1.6;
     A('<text class="dt'+(cls?' '+cls:'')+'" x="'+f(mx)+'" y="'+f(my)+'" transform="rotate('+f(ang)+' '+f(mx)+' '+f(my)+')">'+label+'</text>');}
-  const L=G.lot,B=G.bldg,Y=G.yard,S=G.sub,Op=G.ops,P=G.park,mz=G.main.z,rg=G.ring,RZ=G.r112.z;
+  const L=G.lot,B=G.bldg,Y=G.yard,S=G.sub,P=G.park,Wk=G.walk,mz=G.main.z,rg=G.ring,RZ=G.r112.z;
   A('<svg id="planSvg" xmlns="http://www.w3.org/2000/svg" viewBox="'+VB0.join(' ')+'" preserveAspectRatio="xMidYMid meet" font-family="Barlow,Arial,sans-serif">');
   A('<defs><marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 2 L10 5 L0 8 Z" fill="#1d2633"/></marker>'+
     '<pattern id="hB" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="3" stroke="#7a8696" stroke-width=".5"/></pattern>'+
@@ -1652,13 +1655,13 @@ function svgPlan(){
   A('<rect class="pav2" x="'+f(rg.w-rg.wd/2)+'" y="'+f(rg.n-rg.wd/2)+'" width="'+f(rg.e-rg.w)+'" height="'+rg.wd+'"/>');
   A('<rect class="pav2" x="'+f(rg.w-rg.wd/2)+'" y="'+f(rg.n-rg.wd/2)+'" width="'+rg.wd+'" height="'+f(mz-rg.n)+'"/>');
   A('<rect class="pav2" x="'+B.x0+'" y="'+B.z1+'" width="'+(B.x1-B.x0)+'" height="'+f(mz-G.main.w/2-B.z1)+'"/>');
-  A('<rect class="pav2" x="'+Op.x0+'" y="'+Op.z1+'" width="'+(Op.x1-Op.x0)+'" height="'+f(mz-G.main.w/2-Op.z1)+'"/>');
+  A('<rect class="pav2" x="'+P.cx1+'" y="'+f(Wk.z-Wk.w/2)+'" width="'+f(B.x0-6-P.cx1)+'" height="'+Wk.w+'" style="fill:#f4efe3"/>');
   // stationnement
   {const k=Math.round((P.x1-P.x0)/P.stall);
    A('<rect class="pav2" x="'+P.x0+'" y="'+P.rows[0][0]+'" width="'+(P.cx1-P.x0)+'" height="'+(P.rows[P.rows.length-1][1]-P.rows[0][0])+'"/>');
-   A('<rect class="pav2" x="'+P.cx0+'" y="'+f(mz+G.main.w/2)+'" width="'+(P.cx1-P.cx0)+'" height="'+f(P.rows[0][0]-mz-G.main.w/2)+'"/>');
+   {const zt=P.rows[P.rows.length-1][1];A('<rect class="pav2" x="'+P.cx0+'" y="'+zt+'" width="'+(P.cx1-P.cx0)+'" height="'+f(mz-G.main.w/2-zt)+'"/>');}
    P.rows.forEach((r,ri)=>{for(let i=0;i<k;i++){const x=P.x0+i*P.stall;
-     if(ri===0&&i>=k-3)A('<rect class="pmr" x="'+f(x+.2)+'" y="'+f(r[0]+.3)+'" width="'+f(P.stall-.4)+'" height="'+f(r[1]-r[0]-.6)+'"/>');
+     if(ri===2&&i>=k-3)A('<rect class="pmr" x="'+f(x+.2)+'" y="'+f(r[0]+.3)+'" width="'+f(P.stall-.4)+'" height="'+f(r[1]-r[0]-.6)+'"/>');
      else if(ri===1&&i>=k-6)A('<rect class="ev" x="'+f(x+.2)+'" y="'+f(r[0]+.3)+'" width="'+f(P.stall-.4)+'" height="'+f(r[1]-r[0]-.6)+'"/>');}
      for(let i=0;i<=k;i++){const x=P.x0+i*P.stall;A('<line class="stl" x1="'+f(x)+'" y1="'+r[0]+'" x2="'+f(x)+'" y2="'+r[1]+'"/>');}});
    tx((P.x0+P.x1)/2,P.rows[0][0]-2,'P · '+NSTALL+' cases','tb');}
@@ -1668,14 +1671,16 @@ function svgPlan(){
   rc(Y,'yd');A('<polyline class="scr" points="'+[[Y.x0,Y.z1],[Y.x0,Y.z0],[Y.x1,Y.z0],[Y.x1,Y.z1]].map(p=>p.join(',')).join(' ')+'"/>');
   tx((Y.x0+Y.x1)/2,(Y.z0+Y.z1)/2-1,'COUR TECHNIQUE','tb');tx((Y.x0+Y.x1)/2,(Y.z0+Y.z1)/2+5,'Génératrices N+1, refroidisseurs secs, écran végétalisé 6,5 m','ts');
   rc(B,'bl');A('<rect x="'+(B.x0+18)+'" y="'+(B.z0+12)+'" width="64" height="20" fill="#fff" opacity=".9"/>');
-  tx((B.x0+B.x1)/2,(B.z0+B.z1)/2-2,'BÂTIMENT TI · 50 MW','tb');tx((B.x0+B.x1)/2,(B.z0+B.z1)/2+4,'3 étages · H ≈ 21 m','ts');tx((B.x0+B.x1)/2,(B.z0+B.z1)/2+8.5,'Emprise 4 400 m² · plancher ≈ 13 200 m²','ts');
+  tx((B.x0+B.x1)/2+6,(B.z0+B.z1)/2-2,'BÂTIMENT TI · 50 MW','tb');tx((B.x0+B.x1)/2,(B.z0+B.z1)/2+4,'3 étages · H ≈ 21 m','ts');tx((B.x0+B.x1)/2,(B.z0+B.z1)/2+8.5,'Emprise 4 400 m² · plancher ≈ 13 200 m²','ts');
   {const D=G.dock;A('<rect x="'+D.x0+'" y="'+B.z1+'" width="'+(D.x1-D.x0)+'" height="14" fill="none" stroke="#111" stroke-width=".4" stroke-dasharray="2 1.5"/>');tx((D.x0+D.x1)/2,B.z1+8.5,'2 quais','ts');}
-  rc(Op,'bl2');tx((Op.x0+Op.x1)/2,(Op.z0+Op.z1)/2-1,'EXPLOITATION','tb');tx((Op.x0+Op.x1)/2,(Op.z0+Op.z1)/2+5,'Accueil · NOC · 2 étages','ts');
-  A('<rect x="'+(Op.x1+3)+'" y="'+(Op.z1-6)+'" width="10" height="4" class="bl2"/>');tx(Op.x1+8,Op.z1-7.5,'Vélos (10)','ts');
+  {const C=G.core;A('<rect class="bl2" x="'+C.x0+'" y="'+B.z0+'" width="'+(C.x1-C.x0)+'" height="'+(B.z1-B.z0)+'"/>');tx((C.x0+C.x1)/2,(B.z0+B.z1)/2,'ACCUEIL · NOC · BUREAUX','ts',-90);
+   A('<rect class="bl2" x="'+(B.x0-6)+'" y="'+(Wk.z-5)+'" width="6" height="10"/>');tx(B.x0-10,Wk.z-7,'Sas','ts');}
+  A('<rect x="77" y="'+(Wk.z-9)+'" width="10" height="4" class="bl2"/>');tx(82,Wk.z-10.5,'Vélos (10)','ts');
+  tx(104,Wk.z+6.5,'Entrée piétonne','ts');
   rc(S,'sub');tx((S.x0+S.x1)/2,(S.z0+S.z1)/2,'POSTE CLIENT 120/25 kV','tb');tx((S.x0+S.x1)/2,(S.z0+S.z1)/2+6,'3 × 47 MVA (N+1)','ts');
   // clôture sécurisée + guérite
-  {const F=G.fence;pl([[F.x0,mz-6],[F.x0,F.z0],[F.x1,F.z0],[F.x1,F.z1],[F.x0,F.z1],[F.x0,mz+6]],'fen');
-   A('<rect class="bl2" x="'+(F.x0-9)+'" y="'+(mz-11)+'" width="6" height="4"/>');tx(F.x0-6,mz-13,'Guérite','ts');
+  {const F=G.fence;pl([[F.x0,Wk.z-1.5],[F.x0,F.z0],[F.x1,F.z0],[F.x1,F.z1],[F.x0,F.z1],[F.x0,mz+6]],'fen');pl([[F.x0,Wk.z+1.5],[F.x0,mz-6]],'fen');
+   A('<rect class="bl2" x="'+(F.x0-9)+'" y="'+(mz-11)+'" width="6" height="4"/>');tx(F.x0-6,mz-13,'Guérite (camions)','ts');
    tx(F.x0+48,F.z0-3,'Clôture du périmètre sécurisé','ts');}
   // cotes
   dim(L.x0,L.z0,L.x1,L.z0,-9,'520 m (approx.)');dim(L.x1,L.z0,L.x1,L.z1,-14,'242 m (approx.)');
@@ -1684,7 +1689,7 @@ function svgPlan(){
   dim((B.x0+B.x1)/2-35,B.z1,(B.x0+B.x1)/2-35,L.z1,0,'97 m','r');
   dim(Y.x0+10,Y.z0,Y.x0+10,L.z0,0,'41 m','r');
   dim(L.x0,-40,B.x0,-40,0,'385 m du bâtiment TI à la limite ouest','r');
-  dim(Op.x0,Op.z0,Op.x1,Op.z0,-4,'40 m');dim(Op.x0,Op.z0,Op.x0,Op.z1,4,'24 m');
+  dim(P.cx1,-31,B.x0,-31,0,'≈ 50 m à pied');
   dim(P.x0,P.rows[P.rows.length-1][1],P.cx1,P.rows[P.rows.length-1][1],4,'46 m');dim(P.x0,P.rows[0][0],P.x0,P.rows[P.rows.length-1][1],5,'36 m');
   dim(S.x0,S.z1,S.x1,S.z1,-4,'76 m');
   dim(G.xe-G.acc.w/2,105,G.xe+G.acc.w/2,105,0,'9 m');
@@ -1702,10 +1707,10 @@ function svgPlan(){
   A('<text class="tls" x="'+(X0+6)+'" y="'+(y+35)+'">Lot 6 593 584 · rue Larose · zone 409 · Saint-Césaire (Qc)</text>');
   y+=42;A('<line class="cell" x1="'+X0+'" y1="'+y+'" x2="'+X1+'" y2="'+y+'"/>');
   const rows=(t,list)=>{y+=9;A('<text class="tlb" x="'+(X0+6)+'" y="'+y+'">'+t+'</text>');list.forEach(r=>{y+=6.2;A('<text class="tl" x="'+(X0+6)+'" y="'+y+'">'+r[0]+'</text>');if(r[1]!==undefined)A('<text class="tl" x="'+(X1-6)+'" y="'+y+'" text-anchor="end">'+r[1]+'</text>');});y+=4;A('<line class="cell" x1="'+X0+'" y1="'+y+'" x2="'+X1+'" y2="'+y+'"/>');};
-  rows('Programme',[['Puissance informatique','50 MW'],['Bâtiment TI','100 × 44 m · 3 étages'],['Hauteur','≈ 21 m'],['Emprise / plancher','4 400 / ≈ 13 200 m²'],['Exploitation','40 × 24 m · 2 étages'],['Terrain','126 057 m²']]);
+  rows('Programme',[['Puissance informatique','50 MW'],['Bâtiment TI','100 × 44 m · 3 étages'],['Hauteur','≈ 21 m'],['Emprise / plancher','4 400 / ≈ 13 200 m²'],['Accueil · NOC · bureaux','noyau ouest'],['Terrain','126 057 m²']]);
   rows('Stationnement proposé',[['Cases automobiles',NSTALL+''],['  dont personnes à mobilité réduite','3'],['  dont bornes de recharge','6'],['Vélos','10'],['Quais de livraison (SU-9)','2'],['Besoin de pointe estimé','≈ 45 véhicules']]);
   rows('Achalandage estimé (exploitation)',[['Personnel total (24/7, 3 quarts)','≈ 40'],['Présence simultanée max.','≈ 45 pers.'],['Déplacements par jour','≈ 120 véh.'],['  dont camions','≈ 10'],['Heure de pointe','≈ 30 véh./h']]);
-  rows('Accès',[['Accès unique par la rue projetée',''],['Rue projetée → route 112 (MTMD)',''],['Aucun accès direct à la route 112',''],['Aucun camion par la rue Larose',''],['Voie privée avant la guérite','≈ 300 m'],['Camions : sortie en marche avant','']]);
+  rows('Accès',[['Accès unique par la rue projetée',''],['Rue projetée → route 112 (MTMD)',''],['Aucun accès direct à la route 112',''],['Aucun camion par la rue Larose',''],['Voie privée avant la guérite (camions)','≈ 300 m'],['Camions : sortie en marche avant',''],['Piétons : contrôle d’accès au bâtiment','']]);
   // légende
   y+=9;A('<text class="tlb" x="'+(X0+6)+'" y="'+y+'">Légende</text>');
   const lg=[['<line class="lot" x1="0" y1="0" x2="14" y2="0"/>','Limite du lot (contour simplifié)'],['<line class="em" x1="0" y1="0" x2="14" y2="0"/>','Emprise de rue'],
